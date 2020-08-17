@@ -1,0 +1,14 @@
+@use "./variables" as *;
+
+// General
+html {
+	box-sizing: border-box;
+	font-family: $font-body;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+// Hidden scrollbar
+::-webkit-scrollbar { display: none; }
