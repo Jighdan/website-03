@@ -16,6 +16,7 @@
 
 	.intro__text {
 		width: 30rem;
+		max-width: 100%;
 
 		.intro__title {
 			margin-bottom: 0;
@@ -23,7 +24,13 @@
 		}
 
 		.intro__body {
-			margin-top: 0;
+			max-width: 100%;
+			margin-top: 0.25rem;
+
+			.intro__text {
+				margin-top: 2vh;
+				margin-bottom: 2vh;
+			}
 		}
 	}
 }

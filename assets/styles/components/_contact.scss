@@ -1,0 +1,16 @@
+.contact__title {
+	text-align: center;
+}
+
+.contact__links {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+	gap: 1rem;
+	grid-gap: 1rem;
+	place-items: center;
+
+	.social__image {
+		width: 60px;
+		height: auto;
+	}
+}

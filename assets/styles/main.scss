@@ -3,7 +3,7 @@
 @import "./components/intro";
 @import "./components/skills";
 @import "./components/projects";
-@import "./components/footer";
+@import "./components/contact";
 
 html {
 	margin: 0;
@@ -19,17 +19,51 @@ html {
 	box-sizing: inherit;
 }
 
+.text__link {
+	text-decoration: none;
+	display: inline-block;
+	color: black;
+
+	&:after {
+		content: "";
+		display: block;
+		height: 3px;
+		width: 0;
+		background: transparent;
+		transition: 
+			width 0.5s ease,
+			background-color 0.5s ease;
+	}
+
+	&:hover:after {
+		width: 100%;
+		background: black;
+	}
+}
+
+// Main
 .main {
 	min-height: 100vh;
 	margin: 0 calc(10vw + 2.5%);
 }
 
-// Section generalia
+// Section general
 .section__container {
 	margin-top: 1.25rem;
 	margin-bottom: 1.25rem;
 
 	.section__title {
 		margin-bottom: 0;
+	}
+}
+
+// Footer
+.footer {
+	width: 100%;
+	margin-top: 10vw;
+	padding: 0.25rem 0.5rem;
+
+	.footer__text {
+		text-align: right;
 	}
 }

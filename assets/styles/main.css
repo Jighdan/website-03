@@ -51,6 +51,7 @@
 
 .intro .intro__text {
   width: 30rem;
+  max-width: 100%;
 }
 
 .intro .intro__text .intro__title {
@@ -59,7 +60,13 @@
 }
 
 .intro .intro__text .intro__body {
-  margin-top: 0;
+  max-width: 100%;
+  margin-top: 0.25rem;
+}
+
+.intro .intro__text .intro__body .intro__text {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
 .skills__container {
@@ -147,42 +154,23 @@
           justify-content: space-evenly;
 }
 
-.footer {
-  width: 100%;
-  margin-top: 5rem;
-  padding: 0.25rem 0.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.contact__title {
+  text-align: center;
 }
 
-.footer .footer__social {
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+.contact__links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(75px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+  gap: 1rem;
+  grid-gap: 1rem;
+  place-items: center;
 }
 
-.footer .footer__social .social__link .social__image {
-  width: 1.75rem;
+.contact__links .social__image {
+  width: 60px;
   height: auto;
-}
-
-.footer .footer__text {
-  text-align: right;
 }
 
 html {
@@ -204,6 +192,27 @@ html {
           box-sizing: inherit;
 }
 
+.text__link {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+}
+
+.text__link:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  -webkit-transition: width 0.5s ease, background-color 0.5s ease;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.text__link:hover:after {
+  width: 100%;
+  background: black;
+}
+
 .main {
   min-height: 100vh;
   margin: 0 calc(10vw + 2.5%);
@@ -216,5 +225,15 @@ html {
 
 .section__container .section__title {
   margin-bottom: 0;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 10vw;
+  padding: 0.25rem 0.5rem;
+}
+
+.footer .footer__text {
+  text-align: right;
 }
 /*# sourceMappingURL=main.css.map */
