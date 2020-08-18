@@ -161,7 +161,7 @@
 }
 
 .project__section:hover {
-  border-color: black;
+  border-color: #3B7D97;
 }
 
 .contact__title {
@@ -206,7 +206,7 @@ html {
 .text__link {
   text-decoration: none;
   display: inline-block;
-  color: black;
+  color: #3B7D97;
 }
 
 .text__link:after {
@@ -221,7 +221,7 @@ html {
 
 .text__link:hover:after {
   width: 100%;
-  background: black;
+  background: #3B7D97;
 }
 
 .main {

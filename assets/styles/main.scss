@@ -22,7 +22,7 @@ html {
 .text__link {
 	text-decoration: none;
 	display: inline-block;
-	color: black;
+	color: $color;
 
 	&:after {
 		content: "";
@@ -37,7 +37,7 @@ html {
 
 	&:hover:after {
 		width: 100%;
-		background: black;
+		background: $color;
 	}
 }
 
