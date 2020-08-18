@@ -3,8 +3,9 @@
 }
 
 .contact__links {
+	margin-top: 1.5rem;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+	grid-template-columns: repeat(4, minmax(50px, 1fr));
 	gap: 1rem;
 	grid-gap: 1rem;
 	place-items: center;

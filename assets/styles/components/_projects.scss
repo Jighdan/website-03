@@ -9,7 +9,8 @@
 
 .project__section {
 	padding: 0.5rem 0.75rem;
-	border: 2px solid black;
+	transition: $transition;
+	border: 2px solid lightgray;
 	border-radius: 0 16px 0 16px;
 
 	.project__intro {
@@ -22,6 +23,8 @@
 		}
 	
 		.project__skills {
+			max-width: 40%;
+			
 			.skill__image {
 				width: 25px;
 				height: auto;
@@ -39,6 +42,9 @@
 		margin-right: auto;
 		display: flex;
 		justify-content: space-evenly;
-
 	}
+}
+
+.project__section:hover {
+	border-color: black;
 }

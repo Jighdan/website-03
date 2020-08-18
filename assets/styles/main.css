@@ -41,7 +41,7 @@
 }
 
 .intro .intro__image {
-  width: 20rem;
+  width: 25rem;
   max-width: 100%;
   height: auto;
   margin-left: auto;
@@ -113,7 +113,9 @@
 
 .project__section {
   padding: 0.5rem 0.75rem;
-  border: 2px solid black;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+  border: 2px solid lightgray;
   border-radius: 0 16px 0 16px;
 }
 
@@ -131,6 +133,10 @@
 
 .project__section .project__intro .project__title {
   margin: 0;
+}
+
+.project__section .project__intro .project__skills {
+  max-width: 40%;
 }
 
 .project__section .project__intro .project__skills .skill__image {
@@ -154,15 +160,20 @@
           justify-content: space-evenly;
 }
 
+.project__section:hover {
+  border-color: black;
+}
+
 .contact__title {
   text-align: center;
 }
 
 .contact__links {
+  margin-top: 1.5rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(75px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+  -ms-grid-columns: (minmax(50px, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(50px, 1fr));
   gap: 1rem;
   grid-gap: 1rem;
   place-items: center;
