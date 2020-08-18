@@ -1,0 +1,29 @@
+.intro {
+	margin-bottom: 2.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+
+	.intro__image {
+		width: 20rem;
+		max-width: 100%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 3.5rem 0 3.5rem 0;
+	}
+
+	.intro__text {
+		width: 30rem;
+
+		.intro__title {
+			margin-bottom: 0;
+			font-size: 2em;
+		}
+
+		.intro__body {
+			margin-top: 0;
+		}
+	}
+}

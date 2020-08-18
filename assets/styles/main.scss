@@ -1,0 +1,35 @@
+@import "./variables";
+@import "./components/header";
+@import "./components/intro";
+@import "./components/skills";
+@import "./components/projects";
+@import "./components/footer";
+
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	user-select: none;
+	font-size: 17px;
+	font-family: $font;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.main {
+	min-height: 100vh;
+	margin: 0 calc(10vw + 2.5%);
+}
+
+// Section generalia
+.section__container {
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+
+	.section__title {
+		margin-bottom: 0;
+	}
+}
