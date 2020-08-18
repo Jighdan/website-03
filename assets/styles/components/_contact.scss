@@ -13,5 +13,10 @@
 	.social__image {
 		width: 60px;
 		height: auto;
+		transition: $transition;
+
+		&:hover {
+			transform: scale(1.1);
+		}
 	}
 }

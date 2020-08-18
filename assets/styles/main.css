@@ -57,6 +57,7 @@
 .intro .intro__text .intro__title {
   margin-bottom: 0;
   font-size: 2em;
+  color: #3B7D97;
 }
 
 .intro .intro__text .intro__body {
@@ -81,6 +82,7 @@
 .skills__container .skill__section .skill__title {
   margin-top: 1rem;
   margin-bottom: 0.45rem;
+  color: #3B7D97;
 }
 
 .skills__container .skill__section .skills__list {
@@ -133,6 +135,7 @@
 
 .project__section .project__intro .project__title {
   margin: 0;
+  color: #3B7D97;
 }
 
 .project__section .project__intro .project__skills {
@@ -182,6 +185,13 @@
 .contact__links .social__image {
   width: 60px;
   height: auto;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.contact__links .social__image:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 html {
@@ -196,6 +206,7 @@ html {
           user-select: none;
   font-size: 17px;
   font-family: "Alata", sans-serif;
+  color: #282828;
 }
 
 *, *:before, *:after {
@@ -236,6 +247,8 @@ html {
 
 .section__container .section__title {
   margin-bottom: 0;
+  text-decoration: underline;
+  color: #3B7D97;
 }
 
 .footer {

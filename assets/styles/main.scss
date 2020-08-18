@@ -13,6 +13,7 @@ html {
 	user-select: none;
 	font-size: 17px;
 	font-family: $font;
+	color: #282828;
 }
 
 *, *:before, *:after {
@@ -54,6 +55,8 @@ html {
 
 	.section__title {
 		margin-bottom: 0;
+		text-decoration: underline;
+		color: $color;
 	}
 }
 
