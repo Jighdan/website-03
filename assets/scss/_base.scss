@@ -1,0 +1,22 @@
+@import "./variables";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-family: $font;
+	font-size: 17px;
+}
+
+// Section general
+.section__container {
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+
+	.section__title {
+		color: $color;
+		margin-bottom: 0;
+		font-size: 1.5em;
+		text-decoration: underline;
+	}
+}

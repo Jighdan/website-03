@@ -1,0 +1,37 @@
+@mixin grid-layout($gap, $content, $min, $max) {
+	display: grid;
+	gap: $gap;
+	grid-gap: $gap;
+	grid-template-columns: repeat($content, minmax($min, $max));
+}
+
+@mixin border($radius, $color: false, $size: false) {
+	border-radius: $radius;
+	@if $size {
+		border-width: $size;
+		border-color: $color;
+		border-style: solid;
+	}
+}
+
+@mixin styled-link($color) {
+	color: $color;
+	display: inline-block;
+	text-decoration: none;
+
+	&::after {
+		background: transparent;
+		content: "";
+		display: block;
+		height: 3px;
+		transition: 
+			width 0.5s ease,
+			background-color 0.5s ease;
+		width: 0;
+	}
+
+	&:hover::after {
+		background: $color;
+		width: 100%;
+	}
+}
