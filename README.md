@@ -1,5 +1,7 @@
 # jighdan.github.io
 
+Migrated to NUXXXXTTTTTT!
+
 ## Build Setup
 
 ```bash
@@ -18,3 +20,6 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+Reach out / projects
+Nav bar text

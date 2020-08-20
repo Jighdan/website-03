@@ -69,18 +69,18 @@
 					social study.
 				</p>
 				<section class="project__links">
-					<a
-						href="https://github.com/Jighdan/36-Questions"
-						target="_blank"
-						class="project__link text__link"
-						>Code</a
-					>
-					<a
-						href="https://jighdan.github.io/36-Questions"
-						target="_blank"
-						class="project__link text__link"
-						>Demo</a
-					>
+					<TextLink
+						link="https://github.com/Jighdan/36-Questions"
+						content="Code"
+						:target="true"
+						class="project__link"
+					/>
+					<TextLink
+						link="https://jighdan.github.io/36-Questions"
+						content="Demo"
+						:target="true"
+						class="project__link"
+					/>
 				</section>
 			</section>
 		</article>
@@ -97,9 +97,11 @@ import SVGFlask from "@/assets/images/svg/flask.svg";
 import SVGJavascript from "@/assets/images/svg/javascript.svg";
 import SVGHTML from "@/assets/images/svg/html5.svg";
 import SVGCSS from "@/assets/images/svg/css3.svg";
+import TextLink from "~/components/TextLink.vue";
 
 export default {
 	components: {
+		TextLink,
 		SVGPython,
 		SVGBash,
 		SVGSQL,
@@ -160,5 +162,9 @@ export default {
 
 .project__section:hover {
 	border-color: $color-border;
+}
+
+.skill__image {
+	@include svg-hover($transition, $color);
 }
 </style>

@@ -14,7 +14,7 @@
 	}
 }
 
-@mixin styled-link($color) {
+@mixin text-link($color) {
 	color: $color;
 	display: inline-block;
 	text-decoration: none;
@@ -30,8 +30,18 @@
 		width: 0;
 	}
 
-	&:hover::after {
+	&:hover::after,
+	&:active::after,
+	&:focus::after {
 		background: $color;
 		width: 100%;
+	}
+}
+
+@mixin svg-hover($transition, $color) {
+	transition: $transition;
+
+	&:hover {
+		fill: $color;
 	}
 }

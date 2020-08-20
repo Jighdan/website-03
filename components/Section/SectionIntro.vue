@@ -11,19 +11,18 @@
 			<section class="intro__body">
 				<p class="intro__text">
 					After writing
-					<a
-						href="https://github.com/Jighdan/MUBI-wbs"
-						class="text__link"
-						target="_blank"
-						>my first Python script</a
-					>, programming became my main curiosity. Since then, I have been
+					<TextLink
+						link="https://github.com/Jighdan/MUBI-wbs"
+						content="my first Python script"
+						:target="true"
+					/>, programming became my main curiosity. Since then, I have been
 					learning about the different programming languages, paradigms, and
 					development processes that it involves.
 				</p>
 				<p class="intro__text">
-					But what I have found the most amazing thing about it, is how
-					programming enables you to communicate even with someone that doesn't
-					speak the same language. The power of contribution. 💪
+					What I have found the most fascinating about programming is how it
+					enables you to communicate even with someone that doesn't speak the
+					same language; the potential of contribution. 💪
 				</p>
 				<p class="intro__text">
 					I enjoy experimenting with new technologies and programming languages,
@@ -37,7 +36,13 @@
 </template>
 
 <script>
-export default {};
+import TextLink from "~/components/TextLink.vue";
+
+export default {
+	components: {
+		TextLink,
+	},
+};
 </script>
 
 <style lang="scss" scoped>
@@ -46,7 +51,6 @@ export default {};
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 2.5rem;
 }
 
 .intro__image {

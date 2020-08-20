@@ -16,8 +16,4 @@ export default {};
 	margin: 0 calc(10vw + 2.5%);
 	min-height: 100vh;
 }
-
-.text__link {
-	@include styled-link($color);
-}
 </style>

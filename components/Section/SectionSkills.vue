@@ -95,7 +95,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .skill__section {
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
@@ -113,6 +113,7 @@ export default {
 		place-items: center;
 
 		.skill__image {
+			@include svg-hover($transition, $color);
 			height: auto;
 			width: 35px;
 		}
