@@ -2,6 +2,10 @@
 
 Migrated to NUXXXXTTTTTT!
 
+## Links
+[v1](https://jighdan.github.io/)
+[v2](https://jighdan.vercel.app)
+
 ## Build Setup
 
 ```bash
