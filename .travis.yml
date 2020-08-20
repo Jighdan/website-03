@@ -8,7 +8,7 @@ cache:
 
 branches:
   only:
-    - master
+    - v2
 
 install:
   - yarn install
@@ -21,4 +21,4 @@ deploy:
   target-branch: v2-pages
   local-dir: dist
   on:
-    branch: master
+    branch: v2
