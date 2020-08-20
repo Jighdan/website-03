@@ -14,9 +14,13 @@ install:
   - yarn install
   - yarn generate
 
+script:
+  - echo "Skipping tests"
+
 deploy:
   provider: pages
-  skip-cleanup: true
+  cleanup: true
+  strategy: git
   token: $GITHUB_TOKEN
   target-branch: v2-pages
   local-dir: dist
