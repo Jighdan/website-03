@@ -101,7 +101,7 @@ export default {
 	margin-bottom: 1.5rem;
 
 	.skill__title {
-		color: $color;
+		color: $color-primary;
 		margin-bottom: 0.45rem;
 		margin-top: 1rem;
 	}
@@ -113,7 +113,6 @@ export default {
 		place-items: center;
 
 		.skill__image {
-			@include svg-hover($transition, $color);
 			height: auto;
 			width: 35px;
 		}

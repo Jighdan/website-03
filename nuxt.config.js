@@ -29,7 +29,7 @@ export default {
 	/*
 	 ** Global CSS
 	 */
-	css: [],
+	css: ["~/assets/scss/base.scss"],
 	/*
 	 ** Plugins to load before mounting the App
 	 ** https://nuxtjs.org/guide/plugins
@@ -45,14 +45,25 @@ export default {
 	 */
 	buildModules: [
 		// Doc: https://github.com/nuxt-community/eslint-module
+		"@nuxtjs/style-resources",
 		"@nuxtjs/eslint-module",
+		"@nuxtjs/color-mode",
 	],
 	/*
 	 ** Nuxt.js modules
 	 */
-	modules: ["@nuxtjs/style-resources", "nuxt-svg-loader"],
+	modules: ["nuxt-svg-loader", "nuxt-webfontloader"],
+
+	// Shared style variables & mixins
 	styleResources: {
-		scss: ["assets/scss/base.scss", "assets/scss/_mixins.scss"],
+		scss: ["assets/scss/_shared.scss"],
+	},
+
+	// Fonts
+	webfontloader: {
+		google: {
+			families: ["Alata"],
+		},
 	},
 	/*
 	 ** Build configuration

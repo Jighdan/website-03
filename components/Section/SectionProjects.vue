@@ -123,7 +123,7 @@ export default {
 }
 
 .project__section {
-	@include border(0 16px, $color-soft, 2px);
+	@include border(0 16px, 2px);
 	padding: 0.5rem 0.75rem;
 	transition: all 0.45s ease-in;
 }
@@ -134,7 +134,7 @@ export default {
 	align-items: flex-start;
 
 	.project__title {
-		color: $color;
+		color: $color-primary;
 		margin: 0;
 	}
 
@@ -161,10 +161,10 @@ export default {
 }
 
 .project__section:hover {
-	border-color: $color-border;
+	border-color: $color-secondary;
 }
 
 .skill__image {
-	@include svg-hover($transition, $color);
+	@include svg-hover;
 }
 </style>

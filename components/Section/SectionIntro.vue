@@ -67,7 +67,7 @@ export default {
 	width: 30rem;
 
 	.intro__title {
-		color: $color;
+		color: $color-primary;
 		font-size: 2em;
 		margin-bottom: 0;
 	}

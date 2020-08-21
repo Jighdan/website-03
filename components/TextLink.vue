@@ -32,9 +32,3 @@ export default {
 	},
 };
 </script>
-
-<style lang="scss">
-.text__link {
-	@include text-link($color);
-}
-</style>

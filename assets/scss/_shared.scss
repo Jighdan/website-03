@@ -1,3 +1,16 @@
+// ----------- Variables ----------- //
+
+$font: "Alata", sans-serif;
+$transition: all 0.45s ease;
+
+$font-color: #282828;
+$color-primary: #3b7d97;
+$color-secondary: #a89984;
+$bg-color: #ffffff;
+
+
+// ----------- Mixins ----------- //
+
 @mixin grid-layout($gap, $content, $min, $max) {
 	display: grid;
 	gap: $gap;
@@ -5,17 +18,17 @@
 	grid-template-columns: repeat($content, minmax($min, $max));
 }
 
-@mixin border($radius, $color: false, $size: false) {
+@mixin border($radius, $size: false) {
 	border-radius: $radius;
 	@if $size {
 		border-width: $size;
-		border-color: $color;
+		border-color: $color-primary;
 		border-style: solid;
 	}
 }
 
-@mixin text-link($color) {
-	color: $color;
+@mixin text-link {
+	color: $color-primary;
 	display: inline-block;
 	text-decoration: none;
 
@@ -33,15 +46,15 @@
 	&:hover::after,
 	&:active::after,
 	&:focus::after {
-		background: $color;
+		background: $color-primary;
 		width: 100%;
 	}
 }
 
-@mixin svg-hover($transition, $color) {
+@mixin svg-hover {
 	transition: $transition;
 
 	&:hover {
-		fill: $color;
+		fill: $color-primary;
 	}
 }
