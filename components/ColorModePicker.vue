@@ -31,12 +31,10 @@ export default {
 
 <style lang="scss">
 .mode__container {
-	display: flex;
-	justify-content: flex-end;
+	@include flex-layout(flex-end, center);
 
 	.mode__icon {
-		margin-left: 0.1rem;
-		margin-right: 0.1rem;
+		@include margin-set($x: 0.1rem);
 
 		&:hover,
 		&:active {

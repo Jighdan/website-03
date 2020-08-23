@@ -75,37 +75,28 @@ export default {
 
 <style lang="scss">
 .project__container {
-	padding: 0.5rem 0.75rem;
-	display: inline-grid;
-	grid-template-rows: auto 1fr auto;
-	gap: 1rem;
-	grid-gap: 1rem;
+	@include padding-set($y: 0.5rem, $x: 0.75rem);
+	@include inline-grid-layout(1rem, auto 1fr auto);
 	border-width: 2px;
 	border-style: solid;
 	border-radius: 0 16px;
 }
 
 .project__intro {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
+	@include flex-layout(space-between, flex-start);
 
 	.project__title {
-		margin-top: 0;
-		margin-bottom: 0;
+		@include margin-set($y: 0);
 	}
 
 	.project__tags {
 		width: 40%;
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
+		@include flex-layout(flex-end, center);
 
 		.svg__icon {
+			@include margin-set($x: 0.1rem);
 			height: auto;
 			width: 25px;
-			margin-left: 0.1rem;
-			margin-right: 0.1rem;
 		}
 	}
 
@@ -115,10 +106,8 @@ export default {
 }
 
 .project__links {
+	@include flex-layout(space-evenly, center);
+	@include margin-set($x: auto);
 	width: 75%;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-	justify-content: space-evenly;
 }
 </style>

@@ -29,7 +29,7 @@ export default {
 <style lang="scss">
 .projects__container {
 	@include grid-layout(1rem, auto-fill, 15rem, 1fr);
-	margin-top: 1rem;
-	padding: 0.25rem 0.5rem;
+	@include margin-set($top: 1rem);
+	@include padding-set($y: 0.25rem, $x: 0.5rem);
 }
 </style>

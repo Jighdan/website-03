@@ -16,7 +16,7 @@ export default {
 
 <style lang="scss">
 .header {
-	margin-bottom: 1rem;
+	@include margin-set($bottom: 1rem);
 	width: 100%;
 }
 </style>

@@ -20,11 +20,9 @@ export default {
 
 <style lang="scss">
 .footer {
-	margin-top: 3rem;
-	padding: 0.25rem 0.5rem;
+	@include flex-layout(space-between, center);
+	@include margin-set($top: 3rem);
+	@include padding-set($y: 3rem, $x: 0.5rem);
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 </style>

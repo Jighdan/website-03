@@ -47,18 +47,14 @@ export default {
 
 <style lang="scss">
 .intro {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
+	@include flex-layout(space-between, center, true);
 }
 
 .intro__image {
+	@include margin-set($x: auto);
 	height: auto;
 	max-width: 100%;
 	width: 25rem;
-	margin-left: auto;
-	margin-right: auto;
 	border-radius: 3.5rem 0;
 }
 
@@ -67,17 +63,16 @@ export default {
 	width: 30rem;
 
 	.intro__title {
+		@include margin-set($bottom: 0);
 		font-size: 2em;
-		margin-bottom: 0;
 	}
 
 	.intro__body {
-		margin-top: 0.25rem;
+		@include margin-set($top: 0.25rem);
 		max-width: 100%;
 
 		.intro__text {
-			margin-bottom: 2vh;
-			margin-top: 2vh;
+			@include margin-set($y: 2vh);
 		}
 	}
 }

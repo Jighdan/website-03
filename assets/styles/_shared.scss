@@ -1,6 +1,55 @@
-@mixin grid-layout($gap, $content, $min, $max) {
+@mixin grid-layout($gap, $content, $min, $max, $center: false) {
 	display: grid;
 	gap: $gap;
 	grid-gap: $gap;
 	grid-template-columns: repeat($content, minmax($min, $max));
+
+	@if $center { place-items: center; }
+}
+
+@mixin inline-grid-layout($gap, $rows) {
+	display: inline-grid;
+	grid-template-rows: $rows;
+	gap: $gap;
+	grid-gap: $gap;
+}
+
+@mixin flex-layout($justify, $align, $wrap: false) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+
+	@if $wrap {
+		flex-wrap: wrap;
+	}
+}
+
+@mixin margin-set($left: false, $right: false, $top: false, $bottom: false, $x: false, $y: false) {
+	@if $left { margin-left: $left; }
+	@if $right { margin-right: $right; }
+	@if $top { margin-top: $top; }
+	@if $bottom { margin-bottom: $bottom; }
+	@if $y {
+		margin-top: $y;
+		margin-bottom: $y;
+	}
+	@if $x {
+		margin-left: $x;
+		margin-right: $x;
+	}
+}
+
+@mixin padding-set($top: false, $right: false, $bottom: false, $left: false, $x: false, $y: false) {
+	@if $top { padding-top: $top; }
+	@if $right { padding-right: $right; }
+	@if $bottom { padding-bottom: $bottom; }
+	@if $left { padding-left: $left; }
+	@if $y {
+		padding-top: $y;
+		padding-bottom: $y;
+	}
+	@if $x {
+		padding-left: $x;
+		padding-right: $x;
+	}
 }

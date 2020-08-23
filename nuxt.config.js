@@ -23,6 +23,44 @@ export default {
 				name: "description",
 				content: process.env.npm_package_description || "",
 			},
+			{
+				name: "title",
+				content: "Jighdan's Portfolio",
+			},
+			{
+				name: "description",
+				content: "I am Jighdan, an always-learning web developer.",
+			},
+			// <!-- Open Graph / Facebook -->
+			{
+				property: "og:title",
+				content: "Jighdan's Portfolio",
+			},
+			{
+				property: "og:description",
+				content: "I am Jighdan, an always-learning web developer.",
+			},
+			{
+				property: "og:image",
+				content: "assets/images/avatar.jpeg",
+			},
+			// <!-- Twitter -->
+			{
+				property: "twitter:card",
+				content: "summary_large_image",
+			},
+			{
+				property: "twitter:title",
+				content: "Jighdan's Portfolio",
+			},
+			{
+				property: "twitter:description",
+				content: "I am Jighdan, an always-learning web developer.",
+			},
+			{
+				property: "twitter:image",
+				content: "assets/images/avatar.jpeg",
+			},
 		],
 		link: [
 			{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" },

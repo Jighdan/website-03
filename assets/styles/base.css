@@ -51,6 +51,10 @@ body {
 	text-decoration: underline;
 }
 
+.intro__image {
+	transition: var(--transition);
+}
+
 .project__container {
 	transition: var(--transition);
 	border-color: var(--color-secondary);

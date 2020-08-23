@@ -52,9 +52,8 @@ export default {
 }
 
 .contact__links {
-	@include grid-layout(1rem, 5, 50px, 1fr);
-	margin-top: 1.75rem;
-	place-items: center;
+	@include grid-layout(1rem, 5, 50px, 1fr, true);
+	@include margin-set($top: 1.75rem);
 
 	.social__image {
 		height: auto;

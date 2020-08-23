@@ -77,19 +77,15 @@ export default {
 
 <style lang="scss">
 .skill__section {
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
+	@include margin-set($y: 1.5rem);
 
 	.skill__title {
-		margin-bottom: 0.75rem;
-		margin-top: 1rem;
+		@include margin-set($y: 1rem);
 	}
 
 	.skills__list {
-		@include grid-layout(0.75rem, auto-fill, 40px, 1fr);
-		padding-left: 0.5rem;
-		padding-right: 0.5rem;
-		place-items: center;
+		@include grid-layout(0.75rem, auto-fill, 40px, 1fr, center);
+		@include padding-set($x: 0.5rem);
 
 		.skill__image {
 			width: 35px;
