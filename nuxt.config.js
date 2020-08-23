@@ -64,6 +64,12 @@ export default {
 	styleResources: {
 		scss: ["assets/styles/_shared.scss"],
 	},
+
+	// Color module
+	colorMode: {
+		preference: "dark",
+		fallback: "light",
+	},
 	/*
 	 ** Build configuration
 	 ** See https://nuxtjs.org/api/configuration-build/

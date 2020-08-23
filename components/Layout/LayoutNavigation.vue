@@ -26,3 +26,19 @@ export default {
 	},
 };
 </script>
+
+<style lang="scss">
+.nav {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 0.5rem 0.25rem;
+	width: inherit;
+
+	.nav__item {
+		padding: 0.1rem 0.25rem;
+		font-size: 1.05em;
+	}
+}
+</style>

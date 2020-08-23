@@ -47,12 +47,13 @@ export default {
 
 <style lang="scss">
 .contact__title {
+	font-size: 1.1em;
 	text-align: center;
 }
 
 .contact__links {
 	@include grid-layout(1rem, 5, 50px, 1fr);
-	margin-top: 1.5rem;
+	margin-top: 1.75rem;
 	place-items: center;
 
 	.social__image {

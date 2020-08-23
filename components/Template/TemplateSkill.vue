@@ -1,6 +1,6 @@
 <template>
 	<section class="skill__section">
-		<h3 class="skill__title text__highlight text__underline">{{ title }}</h3>
+		<h3 class="skill__title text__highlight">{{ title }}</h3>
 		<section class="skills__list">
 			<component
 				:is="`icon-${item}`"
@@ -81,7 +81,7 @@ export default {
 	margin-bottom: 1.5rem;
 
 	.skill__title {
-		margin-bottom: 0.45rem;
+		margin-bottom: 0.75rem;
 		margin-top: 1rem;
 	}
 

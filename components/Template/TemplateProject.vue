@@ -1,5 +1,5 @@
 <template>
-	<section class="project__section">
+	<section class="project__container">
 		<section class="project__intro">
 			<h3 class="project__title text__highlight">{{ project.title }}</h3>
 			<section class="project__tags">
@@ -37,6 +37,13 @@ import IconCss from "@/assets/images/svg/css3.svg";
 import IconSass from "@/assets/images/svg/sass.svg";
 import IconSql from "@/assets/images/svg/mysql.svg";
 import IconLatex from "@/assets/images/svg/latex.svg";
+import IconNuxt from "@/assets/images/svg/nuxt-dot-js.svg";
+import IconFlask from "@/assets/images/svg/flask.svg";
+import IconVue from "@/assets/images/svg/vue-dot-js.svg";
+import IconQuasar from "@/assets/images/svg/quasar.svg";
+import IconTailwind from "@/assets/images/svg/tailwindcss.svg";
+import IconBootstrap from "@/assets/images/svg/bootstrap.svg";
+import IconBash from "@/assets/images/svg/gnubash.svg";
 import TextLink from "~/components/TextLink.vue";
 
 export default {
@@ -49,6 +56,13 @@ export default {
 		IconSass,
 		IconSql,
 		IconLatex,
+		IconNuxt,
+		IconFlask,
+		IconVue,
+		IconQuasar,
+		IconTailwind,
+		IconBootstrap,
+		IconBash,
 	},
 	props: {
 		project: {
@@ -59,12 +73,16 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.project__section {
-	border-radius: 0 16px;
+<style lang="scss">
+.project__container {
+	padding: 0.5rem 0.75rem;
+	display: inline-grid;
+	grid-template-rows: auto 1fr auto;
+	gap: 1rem;
+	grid-gap: 1rem;
 	border-width: 2px;
 	border-style: solid;
-	padding: 0.5rem 0.75rem;
+	border-radius: 0 16px;
 }
 
 .project__intro {
@@ -73,15 +91,21 @@ export default {
 	align-items: flex-start;
 
 	.project__title {
-		margin: 0;
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 
 	.project__tags {
-		max-width: 40%;
+		width: 40%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
 
 		.svg__icon {
 			height: auto;
 			width: 25px;
+			margin-left: 0.1rem;
+			margin-right: 0.1rem;
 		}
 	}
 

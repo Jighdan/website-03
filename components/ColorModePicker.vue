@@ -1,7 +1,11 @@
 <template>
-	<ul class="color__container">
+	<ul class="mode__container">
 		<li v-for="color of colors" :key="color">
-			<component :is="`icon-${color}`" @click="$colorMode.preference = color" />
+			<component
+				:is="`icon-${color}`"
+				class="mode__icon"
+				@click="$colorMode.preference = color"
+			/>
 		</li>
 	</ul>
 </template>
@@ -25,9 +29,19 @@ export default {
 };
 </script>
 
-<style>
-.color__container {
+<style lang="scss">
+.mode__container {
 	display: flex;
 	justify-content: flex-end;
+
+	.mode__icon {
+		margin-left: 0.1rem;
+		margin-right: 0.1rem;
+
+		&:hover,
+		&:active {
+			transform: scale(1.1);
+		}
+	}
 }
 </style>
