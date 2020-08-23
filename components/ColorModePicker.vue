@@ -34,7 +34,7 @@ export default {
 	@include flex-layout(flex-end, center);
 
 	.mode__icon {
-		@include margin-set($x: 0.1rem);
+		@include margin-set($x: 0.25rem);
 
 		&:hover,
 		&:active {

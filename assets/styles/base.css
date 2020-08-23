@@ -16,7 +16,7 @@
 
 .sepia-mode {
 	--font-color: #433422;
-	--color-primary: #98971a;
+	--color-primary: #7a7a11;
 	--color-secondary: #ded0bf;
 	--bg-color: #f1e7d0;
 }
@@ -101,7 +101,8 @@ body {
 }
 
 .social__link:hover .svg__icon,
-.social__link:active .svg__icon {
+.social__link:active .svg__icon,
+.social__link:focus .svg__icon {
 	fill: var(--color-primary);
 }
 

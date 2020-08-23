@@ -47,21 +47,25 @@ export default {
 
 <style lang="scss">
 .contact__title {
-	font-size: 1.1em;
 	text-align: center;
 }
 
 .contact__links {
-	@include grid-layout(1rem, 5, 50px, 1fr, true);
+	@include flex-layout(space-evenly, center, $wrap: true);
 	@include margin-set($top: 1.75rem);
 
-	.social__image {
-		height: auto;
-		width: 60px;
+	.social__link {
+		.social__image {
+			height: auto;
+			width: calc(50px + 2.5vw);
+		}
 
 		&:hover,
-		&:active {
-			transform: scale(1.1);
+		&:active,
+		&:focus {
+			.social__image {
+				transform: scale(1.1);
+			}
 		}
 	}
 }
