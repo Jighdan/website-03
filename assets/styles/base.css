@@ -52,6 +52,7 @@ body {
 }
 
 .project__container {
+	transition: var(--transition);
 	border-color: var(--color-secondary);
 }
 
@@ -61,10 +62,6 @@ body {
 
 .text__highlight {
 	color: var(--color-primary);
-}
-
-.text__underline {
-	text-decoration: underline;
 }
 
 .text__link {
