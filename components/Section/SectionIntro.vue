@@ -7,7 +7,7 @@
 		/>
 
 		<section class="intro__text">
-			<h1 class="intro__title">Hey ~ I'm Reinny 🤙</h1>
+			<h1 class="intro__title text__highlight">Hey ~ I'm Reinny 🤙</h1>
 			<section class="intro__body">
 				<p class="intro__text">
 					After writing
@@ -45,7 +45,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .intro {
 	display: flex;
 	flex-wrap: wrap;
@@ -54,12 +54,12 @@ export default {
 }
 
 .intro__image {
-	@include border(3.5rem 0);
 	height: auto;
-	margin-left: auto;
-	margin-right: auto;
 	max-width: 100%;
 	width: 25rem;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 3.5rem 0;
 }
 
 .intro__text {
@@ -67,7 +67,6 @@ export default {
 	width: 30rem;
 
 	.intro__title {
-		color: $color-primary;
 		font-size: 2em;
 		margin-bottom: 0;
 	}

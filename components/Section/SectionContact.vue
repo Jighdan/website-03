@@ -6,19 +6,22 @@
 				href="https://www.linkedin.com/in/reinny-almonte-ramos-b70312186/"
 				class="social__link"
 			>
-				<SVGLinkedIn class="social__image" />
+				<SVGLinkedIn class="social__image svg__icon" />
 			</a>
 			<a href="https://github.com/Jighdan" class="social__link">
-				<SVGGithub class="social__image" />
+				<SVGGithub class="social__image svg__icon" />
 			</a>
 			<a
 				href="https://api.whatsapp.com/send?phone=+18299122442"
 				class="social__link"
 			>
-				<SVGWhatsapp class="social__image" />
+				<SVGWhatsapp class="social__image svg__icon" />
+			</a>
+			<a href="https://twitter.com/jighdan" class="social__link">
+				<SVGTwitter class="social__image svg__icon" />
 			</a>
 			<a href="mailto:reynsth@gmail.com" class="social__link">
-				<SVGMail class="social__image" />
+				<SVGMail class="social__image svg__icon" />
 			</a>
 		</section>
 	</section>
@@ -28,6 +31,7 @@
 import SVGLinkedIn from "@/assets/images/svg/linkedin.svg";
 import SVGGithub from "@/assets/images/svg/github.svg";
 import SVGWhatsapp from "@/assets/images/svg/whatsapp.svg";
+import SVGTwitter from "@/assets/images/svg/twitter.svg";
 import SVGMail from "@/assets/images/svg/email.svg";
 
 export default {
@@ -36,26 +40,27 @@ export default {
 		SVGGithub,
 		SVGWhatsapp,
 		SVGMail,
+		SVGTwitter,
 	},
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .contact__title {
 	text-align: center;
 }
 
 .contact__links {
-	@include grid-layout(1rem, 4, 50px, 1fr);
+	@include grid-layout(1rem, 5, 50px, 1fr);
 	margin-top: 1.5rem;
 	place-items: center;
 
 	.social__image {
 		height: auto;
-		transition: $transition;
 		width: 60px;
 
-		&:hover {
+		&:hover,
+		&:active {
 			transform: scale(1.1);
 		}
 	}

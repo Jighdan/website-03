@@ -1,0 +1,114 @@
+$font: "Alata", sans-serif;
+$transition: all 0.45s ease;
+
+$font-color: #282828;
+$color-primary: #3b7d97;
+$color-secondary: #a89984;
+$bg-color: #ffffff;
+
+.sepia-mode {
+	$font-color: #433422;
+	$color-primary: #9d0006;
+	$color-secondary: #ded0bf;
+	$bg-color: #f1e7d0;
+}
+
+.dark-mode body {
+	$font-color: #fbf1c7;
+	$color-primary: #d65d0e;
+	$color-secondary: #928374;
+	$bg-color: #1d2021;
+}
+
+// ------------ General ------------ //
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-size: 17px;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $font;
+	color: $font-color;
+	background-color: $bg-color;
+	scroll-behavior: smooth;
+	user-select: none;
+}
+
+// General Section
+.section__container {
+	min-height: 40vh;
+	margin-top: 4rem;
+
+	.section__title {
+		color: $color-primary;
+		margin-bottom: 0;
+		font-size: 1.5em;
+		text-decoration: underline;
+	}
+}
+
+// Project Section
+.project__section {
+	border-color: $color-secondary;
+
+	&:hover {
+		border-color: $color-primary;
+	}
+}
+
+// Text
+.text__highlight {
+	color: $color-primary;
+}
+
+.text__underline {
+	text-decoration: underline;
+}
+
+.text__link {
+	color: $color-primary;
+	display: inline-block;
+	text-decoration: none;
+
+	&::after {
+		background: transparent;
+		content: "";
+		display: block;
+		height: 3px;
+		transition: 
+			width 0.5s ease,
+			background-color 0.5s ease;
+		width: 0;
+	}
+
+	&:hover::after,
+	&:active::after,
+	&:focus::after {
+		background: $color-primary;
+		width: 100%;
+	}
+}
+
+// Icons
+.svg__icon {
+	transition: $transition;
+
+	&:hover {
+		fill: $color-primary
+	}
+}
+
+.social__link {
+	&:hover,
+	&:active {
+		.svg__icon {
+			fill: $color-primary
+		}
+	}
+}

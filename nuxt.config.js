@@ -14,7 +14,7 @@ export default {
 	 ** See https://nuxtjs.org/api/configuration-head
 	 */
 	head: {
-		title: "Jighdan's Portfolios",
+		title: "Jighdan's Portfolio",
 		meta: [
 			{ charset: "utf-8" },
 			{ name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -24,12 +24,18 @@ export default {
 				content: process.env.npm_package_description || "",
 			},
 		],
-		link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+		link: [
+			{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+			{
+				rel: "stylesheet",
+				href: "https://fonts.googleapis.com/css?family=Alata&display=swap",
+			},
+		],
 	},
 	/*
 	 ** Global CSS
 	 */
-	css: ["~/assets/scss/base.scss"],
+	css: ["~/assets/styles/base.css"],
 	/*
 	 ** Plugins to load before mounting the App
 	 ** https://nuxtjs.org/guide/plugins
@@ -45,25 +51,18 @@ export default {
 	 */
 	buildModules: [
 		// Doc: https://github.com/nuxt-community/eslint-module
+		"@nuxtjs/color-mode",
 		"@nuxtjs/style-resources",
 		"@nuxtjs/eslint-module",
-		"@nuxtjs/color-mode",
 	],
 	/*
 	 ** Nuxt.js modules
 	 */
-	modules: ["nuxt-svg-loader", "nuxt-webfontloader"],
+	modules: ["nuxt-svg-loader"],
 
 	// Shared style variables & mixins
 	styleResources: {
-		scss: ["assets/scss/_shared.scss"],
-	},
-
-	// Fonts
-	webfontloader: {
-		google: {
-			families: ["Alata"],
-		},
+		scss: ["assets/styles/_shared.scss"],
 	},
 	/*
 	 ** Build configuration

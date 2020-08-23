@@ -1,0 +1,6 @@
+@mixin grid-layout($gap, $content, $min, $max) {
+	display: grid;
+	gap: $gap;
+	grid-gap: $gap;
+	grid-template-columns: repeat($content, minmax($min, $max));
+}

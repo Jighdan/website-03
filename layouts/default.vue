@@ -7,11 +7,7 @@
 		<footer class="footer">
 			<p class="footer__text">
 				Made by
-				<TextLink
-					link="https://github.com/jighdan"
-					content="Jighdan"
-					:target="true"
-				/>
+				<TextLink link="#" content="Reinny Almonte" />
 			</p>
 		</footer>
 	</main>
@@ -39,6 +35,7 @@
 }
 
 .footer {
+	margin-top: 3rem;
 	padding: 0.25rem 0.5rem;
 	width: 100%;
 
