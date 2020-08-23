@@ -51,11 +51,11 @@ body {
 	text-decoration: underline;
 }
 
-.project__section {
+.project__container {
 	border-color: var(--color-secondary);
 }
 
-.project__section:hover {
+.project__container:hover {
 	border-color: var(--color-primary);
 }
 
