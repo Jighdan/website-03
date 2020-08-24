@@ -24,17 +24,18 @@ export default {
 	@include flex-layout(center, center, $direction: column);
 
 	.error__title {
-		@include margin-set($y: 2.5vh);
-		font-size: 6.5em;
+		@include margin-set($top: 2.5vh, $bottom: 1vh);
+		font-size: 7.5em;
 		text-decoration: none;
 	}
 
 	.error__text {
-		font-size: 1.5em;
+		font-size: 1.75em;
+		text-align: center;
 	}
 
 	.error__link {
-		margin-top: 3.5rem;
+		@include margin-set($top: 3.5rem, $bottom: 1.5rem);
 
 		&:hover,
 		&:active,
@@ -46,7 +47,7 @@ export default {
 		}
 
 		.error__icon {
-			width: 60px;
+			width: 75px;
 			height: auto;
 			transform: rotate(180deg);
 		}
