@@ -13,9 +13,9 @@
 </template>
 
 <script>
-import IconLight from "@/assets/images/svg/mode-light.svg";
-import IconDark from "@/assets/images/svg/mode-dark.svg";
-import IconSepia from "@/assets/images/svg/mode-sepia.svg";
+import IconLight from "~/assets/images/svg/mode-light.svg";
+import IconDark from "~/assets/images/svg/mode-dark.svg";
+import IconSepia from "~/assets/images/svg/mode-sepia.svg";
 
 export default {
 	components: {
@@ -40,13 +40,12 @@ export default {
 		@include margin-set($x: 0.45rem);
 
 		.mode__icon {
-			width: minmax(30px, 45px);
+			width: 30px;
 			height: auto;
 		}
 
 		&:hover,
-		&:active,
-		&:focus {
+		&:active {
 			.mode__icon {
 				transform: scale(1.25);
 			}

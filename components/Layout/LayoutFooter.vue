@@ -1,19 +1,21 @@
 <template>
 	<footer class="footer">
-		<ColorModePicker />
+		<LayoutColorScheme />
 		<p class="footer__text">
 			Made by
-			<TextLink link="#" content="Reinny Almonte" />
+			<BaseTextLink link="#" content="Reinny Almonte" />
 		</p>
 	</footer>
 </template>
 
 <script>
-import ColorModePicker from "~/components/ColorModePicker.vue";
+import LayoutColorScheme from "~/components/Layout/LayoutColorScheme.vue";
+import BaseTextLink from "~/components/Base/BaseTextLink";
 
 export default {
 	components: {
-		ColorModePicker,
+		LayoutColorScheme,
+		BaseTextLink,
 	},
 };
 </script>

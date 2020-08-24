@@ -11,7 +11,7 @@
 			<section class="intro__body">
 				<p class="intro__text">
 					After writing
-					<TextLink
+					<BaseTextLink
 						link="https://github.com/Jighdan/MUBI-wbs"
 						content="my first Python script"
 						:target="true"
@@ -36,11 +36,11 @@
 </template>
 
 <script>
-import TextLink from "~/components/TextLink.vue";
+import BaseTextLink from "~/components/Base/BaseTextLink.vue";
 
 export default {
 	components: {
-		TextLink,
+		BaseTextLink,
 	},
 };
 </script>

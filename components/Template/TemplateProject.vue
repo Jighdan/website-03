@@ -13,13 +13,13 @@
 		</section>
 		<p class="project__text">{{ project.description }}</p>
 		<section class="project__links">
-			<TextLink
+			<BaseTextLink
 				v-if="project.links.demo"
 				:link="project.links.demo"
 				:target="true"
 				content="Demo"
 			/>
-			<TextLink
+			<BaseTextLink
 				v-if="project.links.code"
 				:link="project.links.code"
 				:target="true"
@@ -44,11 +44,11 @@ import IconQuasar from "@/assets/images/svg/quasar.svg";
 import IconTailwind from "@/assets/images/svg/tailwindcss.svg";
 import IconBootstrap from "@/assets/images/svg/bootstrap.svg";
 import IconBash from "@/assets/images/svg/gnubash.svg";
-import TextLink from "~/components/TextLink.vue";
+import BaseTextLink from "~/components/Base/BaseTextLink.vue";
 
 export default {
 	components: {
-		TextLink,
+		BaseTextLink,
 		IconPython,
 		IconJavascript,
 		IconHtml,
