@@ -3,7 +3,6 @@
 	gap: $gap;
 	grid-gap: $gap;
 	grid-template-columns: repeat($content, minmax($min, $max));
-
 	@if $center { place-items: center; }
 }
 
@@ -14,14 +13,12 @@
 	grid-gap: $gap;
 }
 
-@mixin flex-layout($justify, $align, $wrap: false) {
+@mixin flex-layout($justify, $align, $wrap: false, $direction: row) {
 	display: flex;
+	flex-direction: $direction;
 	justify-content: $justify;
 	align-items: $align;
-
-	@if $wrap {
-		flex-wrap: wrap;
-	}
+	@if $wrap { flex-wrap: wrap; }
 }
 
 @mixin margin-set($left: false, $right: false, $top: false, $bottom: false, $x: false, $y: false) {

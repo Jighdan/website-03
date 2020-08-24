@@ -1,6 +1,6 @@
 # jighdan.github.io
 
-Migrated to NUXXXXTTTTTT!
+Nuxt Migration
 
 ## Links
 #### [v1](https://jighdan.github.io/)
@@ -30,6 +30,3 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-
-Reach out / projects
-Nav bar text

@@ -1,11 +1,13 @@
 <template>
 	<ul class="mode__container">
 		<li v-for="color of colors" :key="color">
-			<component
-				:is="`icon-${color}`"
-				class="mode__icon"
-				@click="$colorMode.preference = color"
-			/>
+			<a class="mode__item svg__wrap" target="_self">
+				<component
+					:is="`icon-${color}`"
+					class="mode__icon svg__icon"
+					@click="$colorMode.preference = color"
+				/>
+			</a>
 		</li>
 	</ul>
 </template>
@@ -32,13 +34,22 @@ export default {
 <style lang="scss">
 .mode__container {
 	@include flex-layout(flex-end, center);
+	@include margin-set($bottom: 0);
 
-	.mode__icon {
-		@include margin-set($x: 0.25rem);
+	.mode__item {
+		@include margin-set($x: 0.45rem);
+
+		.mode__icon {
+			width: minmax(30px, 45px);
+			height: auto;
+		}
 
 		&:hover,
-		&:active {
-			transform: scale(1.1);
+		&:active,
+		&:focus {
+			.mode__icon {
+				transform: scale(1.25);
+			}
 		}
 	}
 }
