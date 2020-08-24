@@ -1,15 +1,18 @@
 <template>
-	<ul class="mode__container">
-		<li v-for="color of colors" :key="color">
-			<a class="mode__item svg__wrap" target="_self">
-				<component
-					:is="`icon-${color}`"
-					class="mode__icon svg__icon"
-					@click="$colorMode.preference = color"
-				/>
-			</a>
-		</li>
-	</ul>
+	<section class="mode__container">
+		<a
+			v-for="color of colors"
+			:key="color"
+			class="mode__item svg__wrap"
+			target="_self"
+		>
+			<component
+				:is="`icon-${color}`"
+				class="mode__icon svg__icon"
+				@click="$colorMode.preference = color"
+			/>
+		</a>
+	</section>
 </template>
 
 <script>
