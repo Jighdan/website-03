@@ -1,3 +1,3 @@
 # ~/components/Section
 
-Contains components that contain whole page sections or functional components.
+Contains components that communicate with the state management, and functional components.

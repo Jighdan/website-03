@@ -42,3 +42,9 @@ export const state = () => ({
 		},
 	],
 });
+
+export const getters = {
+	getProjects(state) {
+		return state.projects;
+	},
+};

@@ -9,7 +9,7 @@ import IconLinkedin from "~/assets/images/svg/linkedin.svg";
 import IconGithub from "~/assets/images/svg/github.svg";
 import IconWhatsapp from "~/assets/images/svg/whatsapp.svg";
 import IconTwitter from "~/assets/images/svg/twitter.svg";
-import IconMail from "~/assets/images/svg/email.svg";
+import IconEmail from "~/assets/images/svg/email.svg";
 
 export default {
 	components: {
@@ -17,7 +17,7 @@ export default {
 		IconLinkedin,
 		IconWhatsapp,
 		IconGithub,
-		IconMail,
+		IconEmail,
 	},
 	props: {
 		name: {

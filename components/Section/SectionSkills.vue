@@ -10,22 +10,17 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 import TemplateSkill from "~/components/Template/TemplateSkill";
 
 export default {
 	components: {
 		TemplateSkill,
 	},
-	computed: {
-		languages() {
-			return this.$store.state.skills.languages;
-		},
-		frameworks() {
-			return this.$store.state.skills.frameworks;
-		},
-		tools() {
-			return this.$store.state.skills.tools;
-		},
-	},
+	computed: mapGetters({
+		languages: "skills/getLanguages",
+		frameworks: "skills/getFrameworks",
+		tools: "skills/getTools",
+	}),
 };
 </script>

@@ -6,7 +6,7 @@
 				v-for="profile in profiles"
 				:key="profile.id"
 				:link="profile.link"
-				:name="profile.name"
+				:name="profile.name.toLowerCase()"
 			/>
 		</section>
 	</section>
@@ -21,7 +21,7 @@ export default {
 		TemplateContact,
 	},
 	computed: mapGetters({
-		profiles: "contact/getProfiles",
+		profiles: "contacts/getProfiles",
 	}),
 };
 </script>

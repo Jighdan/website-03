@@ -12,17 +12,16 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 import TemplateProject from "~/components/Template/TemplateProject";
 
 export default {
 	components: {
 		TemplateProject,
 	},
-	computed: {
-		projects() {
-			return this.$store.state.projects.projects;
-		},
-	},
+	computed: mapGetters({
+		projects: "projects/getProjects",
+	}),
 };
 </script>
 
