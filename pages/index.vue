@@ -1,9 +1,9 @@
 <template>
 	<article>
 		<SectionIntro />
-		<SectionSkills />
-		<SectionProjects />
-		<SectionContact />
+		<LazySectionSkills />
+		<LazySectionProjects />
+		<LazySectionContact />
 	</article>
 </template>
 

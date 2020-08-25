@@ -14,9 +14,11 @@
   },
   "dependencies": {
     "nuxt": "^2.14.0",
-    "nuxt-svg-loader": "^1.2.0"
+    "nuxt-svg-loader": "^1.2.0",
+    "nuxt-webfontloader": "^1.1.0"
   },
   "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.2.0",
     "@nuxtjs/color-mode": "^1.0.3",
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
@@ -26,6 +28,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "imagemin-mozjpeg": "^9.0.0",
     "node-sass": "^4.14.1",
     "prettier": "^2.0.5",
     "push-dir": "^0.4.1",

@@ -62,13 +62,7 @@ export default {
 				content: "assets/images/avatar.jpeg",
 			},
 		],
-		link: [
-			{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-			{
-				rel: "stylesheet",
-				href: "https://fonts.googleapis.com/css?family=Alata&display=swap",
-			},
-		],
+		link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
 	},
 	/*
 	 ** Global CSS
@@ -92,11 +86,19 @@ export default {
 		"@nuxtjs/color-mode",
 		"@nuxtjs/style-resources",
 		"@nuxtjs/eslint-module",
+		"@aceforth/nuxt-optimized-images",
 	],
 	/*
 	 ** Nuxt.js modules
 	 */
-	modules: ["nuxt-svg-loader"],
+	modules: ["nuxt-svg-loader", "nuxt-webfontloader"],
+
+	// Fonts
+	webfontloader: {
+		google: {
+			families: ["Alata&display=swap"],
+		},
+	},
 
 	// Shared style variables & mixins
 	styleResources: {
@@ -109,6 +111,11 @@ export default {
 		fallback: "light",
 		componentName: "LayoutColorScheme",
 	},
+
+	optimizedImages: {
+		optimizeImages: true,
+	},
+
 	/*
 	 ** Build configuration
 	 ** See https://nuxtjs.org/api/configuration-build/

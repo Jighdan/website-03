@@ -2,6 +2,11 @@
 
 Nuxt Migration
 
+## Tools
+- [@nuxtjs/nuxt-svg-loader](https://github.com/Developmint/nuxt-svg-loader/): For loading svg images as components.
+- [@nuxtjs/style-resources-module](https://github.com/nuxt-community/style-resources-module): Makes a `.scss` file public, so mixins can be shared among all the components.
+- [@nuxtjs/color-mode-module](https://github.com/nuxt-community/color-mode-module): Dark and Light mode with auto detection made easy with NuxtJS.
+
 ## Links
 #### [v1](https://jighdan.github.io/)
 - HTML
