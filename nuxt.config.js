@@ -107,8 +107,8 @@ export default {
 
 	// Color module
 	colorMode: {
-		preference: "dark",
-		fallback: "light",
+		preference: "system",
+		fallback: "dark",
 		componentName: "SectionColorScheme",
 	},
 

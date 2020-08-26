@@ -14,6 +14,7 @@
 				</section>
 			</section>
 		</section>
+
 		<article class="section__projects__all__container">
 			<TemplateProjectExpanded
 				v-for="project in projects"
