@@ -109,7 +109,7 @@ export default {
 	colorMode: {
 		preference: "dark",
 		fallback: "light",
-		componentName: "LayoutColorScheme",
+		componentName: "SectionColorScheme",
 	},
 
 	optimizedImages: {

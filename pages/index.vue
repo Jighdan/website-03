@@ -2,7 +2,7 @@
 	<article>
 		<SectionIntro />
 		<LazySectionSkills />
-		<LazySectionProjects />
+		<LazySectionProjectsMain />
 		<LazySectionContact />
 	</article>
 </template>

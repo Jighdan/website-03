@@ -1,6 +1,6 @@
 <template>
 	<footer class="footer">
-		<LayoutColorScheme />
+		<SectionColorScheme />
 		<p class="footer__text">
 			Made by
 			<BaseTextLink link="#" content="Reinny Almonte" />
@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import LayoutColorScheme from "~/components/Layout/LayoutColorScheme.vue";
+import SectionColorScheme from "~/components/Section/SectionColorScheme.vue";
 import BaseTextLink from "~/components/Base/BaseTextLink";
 
 export default {
 	components: {
-		LayoutColorScheme,
+		SectionColorScheme,
 		BaseTextLink,
 	},
 };

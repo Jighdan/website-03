@@ -93,6 +93,12 @@ body {
 	width: 100%;
 }
 
+.svg__wrap:hover .svg__icon,
+.svg__wrap:active .svg__icon,
+.svg__wrap:focus .svg__icon {
+	fill: var(--color-primary);
+}
+
 .svg__icon {
 	transition: var(--transition);
 	fill: var(--color-soft);
@@ -101,10 +107,3 @@ body {
 .svg__icon:hover {
 	fill: var(--color-primary);
 }
-
-.svg__wrap:hover .svg__icon,
-.svg__wrap:active .svg__icon,
-.svg__wrap:focus .svg__icon {
-	fill: var(--color-primary);
-}
-

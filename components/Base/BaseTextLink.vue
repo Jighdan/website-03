@@ -23,7 +23,7 @@ export default {
 		},
 		content: {
 			type: String,
-			required: true,
+			default: "",
 		},
 		target: {
 			type: Boolean,
