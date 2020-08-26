@@ -55,9 +55,9 @@ export default {
 .template__project__compact__container {
 	@include padding-set($y: 0.5rem, $x: 0.75rem);
 	@include inline-grid-layout(1rem, auto 1fr auto);
+	@include border-radius-cut(0, 16px);
 	border-width: 2px;
 	border-style: solid;
-	border-radius: 0 16px;
 }
 
 .template__project__compact__intro {

@@ -5,19 +5,21 @@
 			<section class="section__projects__all__filter">
 				<h1 class="section__projects__all__title">Filter by:</h1>
 				<section class="section__projects__all__tags">
-					<BaseIcon
+					<section
 						v-for="tag in availableTags"
 						:key="tag"
-						:icon-name="tag"
-						class="section__projects__all__tag"
-					/>
+						class="section__projects__all__tags__wrap"
+						@click="setCurrentTag(tag)"
+					>
+						<BaseIcon :name="tag" class="section__projects__all__tag" />
+					</section>
 				</section>
 			</section>
 		</section>
 
 		<article class="section__projects__all__container">
 			<TemplateProjectExpanded
-				v-for="project in projects"
+				v-for="project in filterProjects"
 				:key="project.id"
 				:project="project"
 			/>
@@ -35,11 +37,26 @@ export default {
 		TemplateProjectExpanded,
 		BaseIcon,
 	},
-	computed: mapGetters({
-		projects: "projects/getAllProjects",
-		availableTags: "projects/getAvailableTags",
-		projectsByTag: "projects/getProjectsByTag",
-	}),
+	data() {
+		return {
+			tagFilter: false,
+		};
+	},
+	computed: {
+		...mapGetters({
+			projects: "projects/getAllProjects",
+			availableTags: "projects/getAvailableTags",
+		}),
+		filterProjects() {
+			const includesTag = (project) => project.tags.includes(this.tagFilter);
+			return this.tagFilter ? this.projects.filter(includesTag) : this.projects;
+		},
+	},
+	methods: {
+		setCurrentTag(tag) {
+			this.tagFilter = tag;
+		},
+	},
 };
 </script>
 

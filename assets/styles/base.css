@@ -30,14 +30,18 @@
 }
 
 body {
+	transition: var(--transition);
 	font-family: var(--font);
 	background-color: var(--bg-color);
 	color: var(--font-color);
-	transition: var(--transition);
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
 	user-select: none;
+}
+
+img {
+	transition: var(--transition);
 }
 
 .section__container {
@@ -50,10 +54,6 @@ body {
 	margin-bottom: 0;
 	font-size: 1.5em;
 	text-decoration: underline;
-}
-
-.intro__image {
-	transition: var(--transition);
 }
 
 .project__container {

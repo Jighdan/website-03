@@ -11,8 +11,4 @@ export default {
 		state.projects.forEach((project) => tags.push(...project.tags));
 		return [...new Set(tags)];
 	},
-	getProjectsByTag(state, tag) {
-		const includesTag = (project) => project.tags.includes(tag);
-		return state.projects.filter(includesTag);
-	},
 };

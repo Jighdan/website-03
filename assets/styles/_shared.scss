@@ -1,3 +1,12 @@
+@mixin border-radius-cut($y, $x) {
+	border-radius: $y $x;
+	&:hover,
+	&:focus,
+	&:active {
+		border-radius: $x $y;
+	}
+}
+
 @mixin grid-layout($gap, $content, $min, $max, $center: false) {
 	display: grid;
 	gap: $gap;
