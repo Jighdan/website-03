@@ -1,3 +1,3 @@
 # ~/components/Template
 
-Contains components that make use or props.
+Contains components that make use of props.

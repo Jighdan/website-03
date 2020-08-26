@@ -1,11 +1,6 @@
 <template>
 	<section class="intro">
-		<img
-			class="intro__image"
-			src="~/assets/images/avatar.jpeg"
-			alt="Picture of Reinny Almonte"
-		/>
-
+		<BaseImage />
 		<section class="intro__text">
 			<h1 class="intro__title text__highlight">Hey ~ I'm Reinny 🤙</h1>
 			<section class="intro__body">
@@ -36,10 +31,12 @@
 </template>
 
 <script>
-import BaseTextLink from "~/components/Base/BaseTextLink.vue";
+import BaseImage from "~/components/Base/BaseImage";
+import BaseTextLink from "~/components/Base/BaseTextLink";
 
 export default {
 	components: {
+		BaseImage,
 		BaseTextLink,
 	},
 };
@@ -48,14 +45,6 @@ export default {
 <style lang="scss">
 .intro {
 	@include flex-layout(space-between, center, true);
-}
-
-.intro__image {
-	@include margin-set($x: auto);
-	height: auto;
-	max-width: 100%;
-	width: 25rem;
-	border-radius: 3.5rem 0;
 }
 
 .intro__text {

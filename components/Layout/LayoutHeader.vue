@@ -1,15 +1,15 @@
 <template>
 	<header class="layout__header">
-		<SectionNav />
+		<SectionNavigation />
 	</header>
 </template>
 
 <script>
-import SectionNav from "~/components/Section/SectionNav";
+import SectionNavigation from "~/components/Section/SectionNavigation";
 
 export default {
 	components: {
-		SectionNav,
+		SectionNavigation,
 	},
 };
 </script>
