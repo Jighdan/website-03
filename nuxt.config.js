@@ -21,7 +21,7 @@ export default {
 			{
 				hid: "description",
 				name: "description",
-				content: process.env.npm_package_description || "",
+				content: "I am Jighdan, an always-learning web developer.",
 			},
 			{
 				name: "title",
