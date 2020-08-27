@@ -107,3 +107,7 @@ img {
 .svg__icon:hover {
 	fill: var(--color-primary);
 }
+
+.tag__svg__icon:active {
+	fill: var(--color-primary);
+}

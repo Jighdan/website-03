@@ -19,7 +19,7 @@ export default () => ({
 				"My formal attempt for a portfolio; learnt so much from Nuxt power for static sites.",
 			descriptionLong:
 				"The one you are seeing right now. Vue and Nuxt are such amazing web frameworks, inmediatly fell for it when a fellow programmer told me about this. Looking forward to try new things with it.",
-			tags: ["nuxt", "sass", "css"],
+			tags: ["nuxt", "vue", "javascript"],
 			links: {
 				demo: "https://jighdan.github.io",
 				code: "https://github.com/Jighdan/jighdan.github.io",
@@ -32,11 +32,12 @@ export default () => ({
 				"A website that displays a series of questions that were portrayed in a social study.",
 			descriptionLong:
 				"A website that displays a series of questions that were portrayed in a social study. The biggest challenge for making this website was to make the questions swipe-able, which I was able to fulfill using the Swipe library.",
-			tags: ["javascript", "html", "sass"],
+			tags: ["javascript", "html", "css"],
 			links: {
 				demo: "https://jighdan.github.io/36-Questions",
 				code: "https://github.com/Jighdan/36-Questions",
 			},
+			main: false,
 		},
 		{
 			title: "Create Py Package",
@@ -49,17 +50,19 @@ export default () => ({
 				demo: false,
 				code: "https://github.com/Jighdan/create-python-package",
 			},
+			main: true,
 		},
 		{
 			title: "Flasky Fox",
 			description: "Static website made with flask",
 			descriptionLong:
 				"A static website generated using Frozen-Flask and deployed to GitHub pages; later migrated to Nuxt First engement with Python for back-end",
-			tags: ["python", "flask", "nuxt"],
+			tags: ["nuxt", "vue", "flask"],
 			links: {
 				demo: "https://jighdan.github.io/flasky_fox/",
 				link: "https://github.com/Jighdan/flasky_fox",
 			},
+			main: false,
 		},
 	],
 });
