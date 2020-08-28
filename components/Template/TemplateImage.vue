@@ -22,7 +22,7 @@ export default {
 <style lang="scss">
 .base__image {
 	@include margin-set($x: auto);
-	@include border-radius-cut(3.5rem, 0);
+	@include border-radius-cut(0, 3.5rem);
 	height: auto;
 	max-width: 100%;
 	width: 25rem;

@@ -1,7 +1,7 @@
 <template>
 	<section class="section__container">
 		<h2 class="section__title">Skills</h2>
-		<section class="skills__container">
+		<section class="section__skills__container">
 			<TemplateSkill title="Languages" :list="languages" />
 			<TemplateSkill title="Frameworks" :list="frameworks" />
 			<TemplateSkill title="Tools" :list="tools" />
@@ -24,3 +24,9 @@ export default {
 	}),
 };
 </script>
+
+<style lang="scss">
+.section__skills__container {
+	@include grid-layout(1.75rem, auto-fit, 300px, 1fr);
+}
+</style>

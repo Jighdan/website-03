@@ -52,8 +52,7 @@ img {
 .section__title {
 	color: var(--color-primary);
 	margin-bottom: 0;
-	font-size: 1.5em;
-	text-decoration: underline;
+	font-size: 1.6em;
 }
 
 .project__container {

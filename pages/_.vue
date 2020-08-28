@@ -2,18 +2,18 @@
 	<section class="error__container">
 		<h1 class="error__title section__title">404</h1>
 		<p class="error__text">The page you were looking for doesn't exist.</p>
-		<nuxt-link class="svg__wrap error__link" to="/"
-			><IconBack class="error__icon svg__icon"
+		<nuxt-link class="svg__wrap error__link" to="/">
+			<BaseIcon name="back" class="error__icon"
 		/></nuxt-link>
 	</section>
 </template>
 
 <script>
-import IconBack from "~/assets/images/svg/go-back.svg";
+import BaseIcon from "~/components/Base/BaseIcon";
 
 export default {
 	components: {
-		IconBack,
+		BaseIcon,
 	},
 	scrollToTop: false,
 };

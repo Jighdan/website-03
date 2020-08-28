@@ -4,44 +4,47 @@
 
 <script>
 // Languages
-import IconPython from "~/assets/images/svg/python.svg";
-import IconJavascript from "~/assets/images/svg/javascript.svg";
-import IconHtml from "~/assets/images/svg/html5.svg";
-import IconCss from "~/assets/images/svg/css3.svg";
-import IconSass from "~/assets/images/svg/sass.svg";
-import IconSql from "~/assets/images/svg/mysql.svg";
-import IconLatex from "~/assets/images/svg/latex.svg";
+import IconPython from "~/assets/svg/python.svg";
+import IconJavascript from "~/assets/svg/javascript.svg";
+import IconHtml from "~/assets/svg/html5.svg";
+import IconCss from "~/assets/svg/css3.svg";
+import IconSass from "~/assets/svg/sass.svg";
+import IconSql from "~/assets/svg/mysql.svg";
+import IconLatex from "~/assets/svg/latex.svg";
 
 // Frameworks
-import IconNuxt from "~/assets/images/svg/nuxt-dot-js.svg";
-import IconFlask from "~/assets/images/svg/flask.svg";
-import IconVue from "~/assets/images/svg/vue-dot-js.svg";
-import IconQuasar from "~/assets/images/svg/quasar.svg";
-import IconTailwind from "~/assets/images/svg/tailwindcss.svg";
-import IconBootstrap from "~/assets/images/svg/bootstrap.svg";
+import IconNuxt from "~/assets/svg/nuxt-dot-js.svg";
+import IconFlask from "~/assets/svg/flask.svg";
+import IconVue from "~/assets/svg/vue-dot-js.svg";
+import IconQuasar from "~/assets/svg/quasar.svg";
+import IconTailwind from "~/assets/svg/tailwindcss.svg";
+import IconBootstrap from "~/assets/svg/bootstrap.svg";
 
 // Tools
-import IconBash from "~/assets/images/svg/gnubash.svg";
-import IconGit from "~/assets/images/svg/git.svg";
-import IconNode from "~/assets/images/svg/node-dot-js.svg";
-import IconNpm from "~/assets/images/svg/npm.svg";
-import IconTravis from "~/assets/images/svg/travisci.svg";
-import IconEslint from "~/assets/images/svg/eslint.svg";
-import IconHeroku from "~/assets/images/svg/heroku.svg";
-import IconNetlify from "~/assets/images/svg/netlify.svg";
-import IconFigma from "~/assets/images/svg/figma.svg";
+import IconBash from "~/assets/svg/gnubash.svg";
+import IconGit from "~/assets/svg/git.svg";
+import IconNode from "~/assets/svg/node-dot-js.svg";
+import IconNpm from "~/assets/svg/npm.svg";
+import IconTravis from "~/assets/svg/travisci.svg";
+import IconEslint from "~/assets/svg/eslint.svg";
+import IconHeroku from "~/assets/svg/heroku.svg";
+import IconNetlify from "~/assets/svg/netlify.svg";
+import IconFigma from "~/assets/svg/figma.svg";
 
 // Color Schemes
-import IconLight from "~/assets/images/svg/mode-light.svg";
-import IconDark from "~/assets/images/svg/mode-dark.svg";
-import IconSepia from "~/assets/images/svg/mode-sepia.svg";
+import IconLight from "~/assets/svg/mode-light.svg";
+import IconDark from "~/assets/svg/mode-dark.svg";
+import IconSepia from "~/assets/svg/mode-sepia.svg";
 
 // Contact
-import IconLinkedin from "~/assets/images/svg/linkedin.svg";
-import IconGithub from "~/assets/images/svg/github.svg";
-import IconWhatsapp from "~/assets/images/svg/whatsapp.svg";
-import IconTwitter from "~/assets/images/svg/twitter.svg";
-import IconEmail from "~/assets/images/svg/email.svg";
+import IconLinkedin from "~/assets/svg/linkedin.svg";
+import IconGithub from "~/assets/svg/github.svg";
+import IconWhatsapp from "~/assets/svg/whatsapp.svg";
+import IconTwitter from "~/assets/svg/twitter.svg";
+import IconEmail from "~/assets/svg/email.svg";
+
+// UI
+import IconBack from "~/assets/svg/go-back.svg";
 
 export default {
 	components: {
@@ -60,6 +63,7 @@ export default {
 		IconBootstrap,
 		IconGit,
 		IconNode,
+		IconBack,
 		IconNpm,
 		IconTravis,
 		IconEslint,

@@ -34,19 +34,18 @@ export default {
 
 <style lang="scss">
 .template__skill {
-	@include margin-set($y: 1.5rem);
-
 	.template__skill__title {
 		@include margin-set($y: 1rem);
+		font-size: 1.15em;
+		font-style: italic;
 	}
 
 	.template__skills__list {
 		@include grid-layout(0.75rem, auto-fill, 40px, 1fr, center);
-		@include padding-set($x: 0.5rem);
 
 		.template__skill__icon {
 			width: 35px;
-			max-width: calc(35px + 2.5vh);
+			max-width: calc(37.5px + 2.5vh);
 		}
 	}
 }

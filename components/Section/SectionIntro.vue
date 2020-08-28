@@ -1,6 +1,6 @@
 <template>
 	<section class="section__intro">
-		<BaseImage />
+		<TemplateImage />
 		<section class="section__intro__container">
 			<h1 class="section__intro__title text__highlight">Hey ~ I'm Reinny 🤙</h1>
 			<section class="section__intro__body">
@@ -15,15 +15,20 @@
 					development processes that it involves.
 				</p>
 				<p class="section__intro__text">
-					What I have found the most fascinating about programming is how it
-					enables you to communicate even with someone that doesn't speak the
-					same language; the potential of contribution. 💪
+					What I have found the most fascinating about programming, in general,
+					is how it enables you as a programmer to communicate even with someone
+					that doesn't speak the same language; the potential of contribution.
+					💪
 				</p>
 				<p class="section__intro__text">
 					I enjoy experimenting with new technologies and programming languages,
-					interacting with other members from diverse communities, contributing
-					to open source, and solving programming challenges. A bit more of my
-					skills and projects below! 🔥
+					interacting with other members from diverse communities, solving
+					programming challenges, and contributing to open source projects
+					<BaseTextLink
+						link="https://github.com/python/python-docs-es/issues"
+						content="(Help translating the Python docs)"
+						:target="true"
+					/>. More about my skills and projects below! 🔥
 				</p>
 			</section>
 		</section>
@@ -31,12 +36,12 @@
 </template>
 
 <script>
-import BaseImage from "~/components/Base/BaseImage";
+import TemplateImage from "~/components/Template/TemplateImage";
 import BaseTextLink from "~/components/Base/BaseTextLink";
 
 export default {
 	components: {
-		BaseImage,
+		TemplateImage,
 		BaseTextLink,
 	},
 };
@@ -52,7 +57,7 @@ export default {
 	width: 30rem;
 
 	.section__intro__title {
-		@include margin-set($bottom: 0);
+		@include margin-set($bottom: 0.75rem);
 		font-size: 2em;
 	}
 
