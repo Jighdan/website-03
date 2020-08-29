@@ -21,7 +21,8 @@ const data = {
 	},
 	resume: {
 		name: "Resume",
-		link: "#",
+		link:
+			"https://drive.google.com/file/d/1SO2dKoMlHH4ko1yx0crX9Xs0bSsPru0e/view?usp=sharing",
 	},
 };
 
