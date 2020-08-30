@@ -98,15 +98,9 @@ img {
 	fill: var(--color-primary);
 }
 
-.svg__icon {
-	transition: var(--transition);
-	fill: var(--color-soft);
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s;
 }
-
-.svg__icon:hover {
-	fill: var(--color-primary);
-}
-
-.tag__svg__icon:active {
-	fill: var(--color-primary);
+.page-enter, .page-leave-to {
+  opacity: 0;
 }

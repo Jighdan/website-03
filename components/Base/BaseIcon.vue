@@ -88,3 +88,14 @@ export default {
 	},
 };
 </script>
+
+<style>
+.svg__icon {
+	transition: var(--transition);
+	fill: var(--color-soft);
+}
+
+.svg__icon:hover {
+	fill: var(--color-primary);
+}
+</style>

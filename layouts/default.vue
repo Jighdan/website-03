@@ -18,7 +18,7 @@ export default {
 
 	.main__content {
 		@include margin-set($y: auto, $x: calc(10vw + 2.5%));
-		min-height: 79vh;
+		min-height: 78vh;
 	}
 }
 </style>

@@ -1,7 +1,7 @@
 const data = {
 	linkedin: {
 		name: "LinkedIn",
-		link: "https://www.linkedin.com/in/reinny-almonte-ramos-b70312186/",
+		link: "https://www.linkedin.com/in/jighdan/",
 	},
 	github: {
 		name: "GitHub",

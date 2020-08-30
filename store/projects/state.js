@@ -5,7 +5,7 @@ export default () => ({
 			description:
 				"A command line note-taking application, with CRUD functions; based on OOP principles.",
 			descriptionLong:
-				"When I first switched from Windows to Linux, using CLI programs became an habit; so I decided to make an app that would allow me to take notes without leaving the command line. The biggest challenge for working on this project, was refractoring after having a minimum viable app; making use of OOP concepts.",
+				"When I first switched from Windows to Linux, using CLI programs became a habit; so I decided to make an app that would allow me to take notes without leaving the command line. The biggest challenge for working on this project was refactoring after having a minimum viable app; making use of OOP concepts.",
 			tags: ["python", "bash", "sql"],
 			links: {
 				demo: false,
@@ -14,11 +14,11 @@ export default () => ({
 			main: true,
 		},
 		{
-			title: "My Portfolio",
+			title: "Nuxt Portfolio",
 			description:
-				"My formal attempt for a portfolio; learnt so much from Nuxt power for static sites.",
+				"My developer portfolio, recreated with Nuxt. Felt in love with it right away; such an amazing framework and community.",
 			descriptionLong:
-				"The one you are seeing right now. Vue and Nuxt are such amazing web frameworks, inmediatly fell for it when a fellow programmer told me about this. Looking forward to try new things with it.",
+				"A portfolio to display my projects and a little about me. While not making use of any CSS framework, and having a mobile-first design pattern, I was able to make a really simple yet practical looking website; also, making use of nuxt-community very own tools, such as, nuxt-color-mode and styled-resources, managing components and making sure they are just fulfilling one responsibility, made the code feel clean, and kept that scalability Vue preaches on.",
 			tags: ["nuxt", "vue", "javascript"],
 			links: {
 				demo: "https://jighdan.github.io",
@@ -29,7 +29,7 @@ export default () => ({
 		{
 			title: "(36 + 3) Questions",
 			description:
-				"A website that displays a series of questions that were portrayed in a social study.",
+				"A static website that displays a series of questions that were portrayed in a social study.",
 			descriptionLong:
 				"A website that displays a series of questions that were portrayed in a social study. The biggest challenge for making this website was to make the questions swipe-able, which I was able to fulfill using the Swipe library.",
 			tags: ["javascript", "html", "css"],
@@ -54,9 +54,9 @@ export default () => ({
 		},
 		{
 			title: "Flasky Fox",
-			description: "Static website made with flask",
+			description: "Static website made with Nuxt",
 			descriptionLong:
-				"A static website generated using Frozen-Flask and deployed to GitHub pages; later migrated to Nuxt First engement with Python for back-end",
+				"A static website about foxes first made with Flask and generated using Frozen-Flask; later migrated to Nuxt. Such a difference from working with these two frameworks for a simple website.",
 			tags: ["nuxt", "vue", "flask"],
 			links: {
 				demo: "https://jighdan.github.io/flasky_fox/",

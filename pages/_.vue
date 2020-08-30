@@ -35,7 +35,7 @@ export default {
 	}
 
 	.error__link {
-		@include margin-set($top: 3.5rem, $bottom: 1.5rem);
+		@include margin-set($top: 2.5rem, $bottom: 1rem);
 
 		&:hover,
 		&:active,
