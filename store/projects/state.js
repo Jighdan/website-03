@@ -1,6 +1,19 @@
 export default () => ({
 	projects: [
 		{
+			title: "Nuxt Portfolio",
+			description:
+				"My developer portfolio, recreated with Nuxt. Felt in love with it right away; such an amazing framework and community.",
+			descriptionLong:
+				"A portfolio to display my projects and a little about me. While not making use of any CSS framework, and having a mobile-first design pattern, I was able to make a really simple yet practical looking website; also, making use of nuxt-community very own tools, such as, nuxt-color-mode and styled-resources, managing components and making sure they are just fulfilling one responsibility, made the code feel clean, and kept that scalability Vue preaches on.",
+			tags: ["nuxt", "vue", "javascript"],
+			links: {
+				demo: "https://jighdan.github.io",
+				code: "https://github.com/Jighdan/jighdan.github.io",
+			},
+			main: true,
+		},
+		{
 			title: "Notew",
 			description:
 				"A command line note-taking application, with CRUD functions; based on OOP principles.",
@@ -14,15 +27,15 @@ export default () => ({
 			main: true,
 		},
 		{
-			title: "Nuxt Portfolio",
+			title: "Create Py Package",
 			description:
-				"My developer portfolio, recreated with Nuxt. Felt in love with it right away; such an amazing framework and community.",
+				"A Python command line application's file structure generator",
 			descriptionLong:
-				"A portfolio to display my projects and a little about me. While not making use of any CSS framework, and having a mobile-first design pattern, I was able to make a really simple yet practical looking website; also, making use of nuxt-community very own tools, such as, nuxt-color-mode and styled-resources, managing components and making sure they are just fulfilling one responsibility, made the code feel clean, and kept that scalability Vue preaches on.",
-			tags: ["nuxt", "vue", "javascript"],
+				"After making notew, I found about packaging and it's benefits; figured out I will be making packages more frequently and to ease the process, made this package template initializer.",
+			tags: ["python", "bash"],
 			links: {
-				demo: "https://jighdan.github.io",
-				code: "https://github.com/Jighdan/jighdan.github.io",
+				demo: false,
+				code: "https://github.com/Jighdan/create-python-package",
 			},
 			main: true,
 		},
@@ -38,19 +51,6 @@ export default () => ({
 				code: "https://github.com/Jighdan/36-Questions",
 			},
 			main: false,
-		},
-		{
-			title: "Create Py Package",
-			description:
-				"A Python command line application's file structure generator",
-			descriptionLong:
-				"After making notew, I found about packaging and it's benefits; figured out I will be making packages more frequently and to ease the process, made this package template initializer.",
-			tags: ["python", "bash"],
-			links: {
-				demo: false,
-				code: "https://github.com/Jighdan/create-python-package",
-			},
-			main: true,
 		},
 		{
 			title: "Flasky Fox",

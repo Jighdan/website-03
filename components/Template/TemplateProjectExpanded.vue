@@ -83,7 +83,7 @@ export default {
 }
 
 .project__expanded__text {
-	@include margin-set($x: 2.5%);
+	@include margin-set($x: 1rem);
 	font-size: 0.9em;
 	line-height: 1.6;
 }
