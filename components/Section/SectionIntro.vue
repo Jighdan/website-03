@@ -10,7 +10,7 @@
 						link="https://github.com/Jighdan/MUBI-wbs"
 						content="my first Python script"
 						:target="true"
-					/>, programming became my main curiosity. Since then, I have been
+					/>, programming became my main curiosity ✨. Since then, I have been
 					learning about the different programming languages, paradigms, and
 					development processes that it involves.
 				</p>

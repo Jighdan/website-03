@@ -77,7 +77,6 @@
 	}
 
 	&:hover::after,
-	&:active::after,
 	&:focus::after {
 		width: 100%;
 		background: $color;
