@@ -8,9 +8,15 @@
 	>
 		{{ content }}
 	</a>
-	<a v-else :href="link" class="text__link" hreflang="en" target="_self">{{
-		content
-	}}</a>
+	<a
+		v-else
+		:href="link"
+		class="text__link"
+		hreflang="en"
+		target="_self"
+		rel="noopener"
+		>{{ content }}</a
+	>
 </template>
 
 <script>

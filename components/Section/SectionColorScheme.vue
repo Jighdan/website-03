@@ -5,6 +5,7 @@
 			:key="color"
 			class="section__color__scheme__mode svg__wrap"
 			target="_self"
+			tabindex="0"
 			@click="$colorMode.preference = color"
 		>
 			<BaseIcon :name="color" class="section__color__scheme__icon svg__icon" />
