@@ -59,3 +59,27 @@
 		padding-right: $x;
 	}
 }
+
+@mixin text-link($color) {
+	color: $color;
+	display: inline-block;
+	text-decoration: none;
+
+	&:after {
+		background: transparent;
+		content: "";
+		display: block;
+		height: 3px;
+		transition: 
+			width 0.5s ease
+			background-color 0.5s ease;
+		width: 0;
+	}
+
+	&:hover::after,
+	&:active::after,
+	&:focus::after {
+		width: 100%;
+		background: $color;
+	}
+}

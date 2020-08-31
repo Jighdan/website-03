@@ -1,0 +1,95 @@
+// ----- Light ----- //
+body .light-mode {
+	color: $font-light-color;
+	background-color: $bg-light-color;
+
+	.section__container__title {
+		color: $color-light-primary;
+	}
+
+	.text__highlight {
+		color: $color-light-primary;
+	}
+
+	.text__link {
+		@include text-link($color-light-primary);
+	}
+
+	.shaped__container {
+		border-color: $color-light-secondary;
+
+		&:hover {
+			border-color: $color-light-primary;
+		}
+	}
+
+	.svg__wrap:hover .svg__icon,
+	.svg__wrap:active .svg__icon,
+	.svg__wrap:focus .svg__icon {
+		fill: $color-light-primary;
+	}
+}
+
+// ----- Dark ----- //
+body .dark-mode {
+	color: $font-dark-color;
+	background-color: $bg-dark-color;
+
+	.section__container__title {
+		color: $color-dark-primary;
+	}
+
+	.text__highlight {
+		color: $color-dark-primary;
+	}
+
+	.text__link {
+		@include text-link($color-dark-primary);
+	}
+
+	.shaped__container {
+		border-color: $color-dark-secondary;
+
+		&:hover {
+			border-color: $color-dark-primary;
+		}
+	}
+
+	.svg__wrap:hover .svg__icon,
+	.svg__wrap:active .svg__icon,
+	.svg__wrap:focus .svg__icon {
+		fill: $color-dark-primary;
+	}
+}
+
+// ----- Sepia ----- //
+body .sepia-mode {
+	color: $font-sepia-color;
+	background-color: $bg-sepia-color;
+
+	.section__container__title {
+		color: $color-sepia-primary;
+	}
+
+	.text__highlight {
+		color: $color-sepia-primary;
+	}
+
+	.text__link {
+		@include text-link($color-sepia-primary);
+	}
+
+	.shaped__container {
+		border-color: $color-sepia-secondary;
+
+		&:hover {
+			border-color: $color-sepia-primary;
+		}
+	}
+
+	.svg__wrap:hover .svg__icon,
+	.svg__wrap:active .svg__icon,
+	.svg__wrap:focus .svg__icon {
+		fill: $color-sepia-primary;
+	}
+}

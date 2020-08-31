@@ -1,5 +1,5 @@
 <template>
-	<section class="template__project__compact__container project__container">
+	<section class="template__project__compact__container shaped__container">
 		<section class="template__project__compact__intro">
 			<h3 class="template__project__compact__title text__highlight">
 				{{ project.title }}

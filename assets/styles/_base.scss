@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-size: $font-size-starter;
+}
+
+body {
+	@include margin-set($y: 0, $x: 0);
+	@include padding-set($y: 0, $x: 0);
+	transition: $transition;
+	font-family: $font;
+	scroll-behavior: smooth;
+	user-select: none;
+}
+
+.section__container {
+	@include margin-set($top: 4rem);
+	min-height: 40vh;
+
+	.section__title {
+		@include margin-set($bottom: 0);
+		font-size: 1.6em;
+	}
+}
+
+.shaped__container {
+	transition: $transition;
+}
+
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s;
+}
+
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
+

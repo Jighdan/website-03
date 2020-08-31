@@ -70,7 +70,7 @@ export default {
 	/*
 	 ** Global CSS
 	 */
-	css: ["~/assets/styles/base.css"],
+	css: ["~/assets/styles/_base.scss", "~/assets/styles/_color-modes.scss"],
 	/*
 	 ** Plugins to load before mounting the App
 	 ** https://nuxtjs.org/guide/plugins
@@ -105,7 +105,7 @@ export default {
 
 	// Shared style variables & mixins
 	styleResources: {
-		scss: ["assets/styles/_shared.scss"],
+		scss: ["assets/styles/_mixins.scss", "assets/styles/_variables.scss"],
 	},
 
 	// Color module
