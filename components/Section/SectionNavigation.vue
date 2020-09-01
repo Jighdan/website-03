@@ -6,6 +6,7 @@
 			:link="profile.link"
 			:content="profile.name"
 			class="section__navigation__item"
+			rel="noopener noreferrer"
 			:target="true"
 		/>
 	</nav>

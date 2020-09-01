@@ -14,14 +14,44 @@ body {
 	user-select: none;
 }
 
+img {
+	transition: $transition;
+}
+
 .section__container {
 	@include margin-set($top: 4rem);
 	min-height: 40vh;
 
-	.section__title {
+	.section__container__title {
 		@include margin-set($bottom: 0);
 		font-size: 1.6em;
 	}
+}
+
+.text__link {
+	display: inline-block;
+	text-decoration: none;
+
+	&::after {
+		background: transparent;
+		content: "";
+		display: block;
+		height: 3px;
+		transition: 
+			width 0.5s ease,
+			background-color 0.5s ease;
+		width: 0;
+	}
+
+	&:hover::after,
+	&:focus::after {
+		width: 100%;
+	}
+}
+
+.svg__icon {
+	transition: $transition;
+	fill: $color-soft;
 }
 
 .shaped__container {

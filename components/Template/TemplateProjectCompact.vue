@@ -53,7 +53,7 @@ export default {
 
 <style lang="scss">
 .template__project__compact__container {
-	@include padding-set($y: 0.5rem, $x: 0.75rem);
+	@include padding-set($y: 0.85rem, $x: 1.85rem);
 	@include inline-grid-layout(1rem, auto 1fr auto);
 	@include border-radius-cut(0, 16px);
 	border-width: 2px;

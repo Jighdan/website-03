@@ -1,6 +1,8 @@
 <template>
 	<section class="section__container">
-		<h2 class="section__title section__contact__title">Reach Out!</h2>
+		<h2 class="section__container__title section__contact__title">
+			Reach Out!
+		</h2>
 		<section class="section__contact__links">
 			<a
 				v-for="profile in profiles"
@@ -8,6 +10,7 @@
 				:href="profile.link"
 				target="_blank"
 				hreflang="en"
+				rel="noopener noreferrer"
 				class="svg__wrap section__contact__link"
 			>
 				<BaseIcon

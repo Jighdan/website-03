@@ -1,6 +1,6 @@
 <template>
 	<section class="section__container">
-		<h2 class="section__title">Projects</h2>
+		<h2 class="section__container__title">Projects</h2>
 		<article class="section__projects__main__container">
 			<TemplateProjectCompact
 				v-for="project in projects"
@@ -30,7 +30,7 @@ export default {
 
 <style lang="scss">
 .section__projects__main__container {
-	@include grid-layout(1rem, auto-fill, 15rem, 1fr);
+	@include grid-layout(1.25rem, auto-fill, 15rem, 1fr);
 	@include margin-set($top: 1rem);
 	@include padding-set($y: 0.25rem, $x: 0.5rem);
 }

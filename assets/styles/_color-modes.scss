@@ -1,5 +1,5 @@
-// ----- Light ----- //
-body .light-mode {
+// ----- Light (DEFAULT) ----- //
+body {
 	color: $font-light-color;
 	background-color: $bg-light-color;
 
@@ -12,7 +12,12 @@ body .light-mode {
 	}
 
 	.text__link {
-		@include text-link($color-light-primary);
+		color: $color-light-primary;
+	
+		&:hover::after,
+		&:focus::after {
+			background: $color-light-primary;
+		}
 	}
 
 	.shaped__container {
@@ -23,6 +28,10 @@ body .light-mode {
 		}
 	}
 
+	.svg__icon:hover {
+		fill: $color-light-primary;
+	}
+
 	.svg__wrap:hover .svg__icon,
 	.svg__wrap:active .svg__icon,
 	.svg__wrap:focus .svg__icon {
@@ -31,7 +40,7 @@ body .light-mode {
 }
 
 // ----- Dark ----- //
-body .dark-mode {
+.dark-mode body {
 	color: $font-dark-color;
 	background-color: $bg-dark-color;
 
@@ -44,7 +53,12 @@ body .dark-mode {
 	}
 
 	.text__link {
-		@include text-link($color-dark-primary);
+		color: $color-dark-primary;
+		
+		&:hover:after,
+		&:focus:after {
+			background: $color-dark-primary;
+		}
 	}
 
 	.shaped__container {
@@ -55,6 +69,10 @@ body .dark-mode {
 		}
 	}
 
+	.svg__icon:hover {
+		fill: $color-dark-primary;
+	}
+
 	.svg__wrap:hover .svg__icon,
 	.svg__wrap:active .svg__icon,
 	.svg__wrap:focus .svg__icon {
@@ -63,7 +81,7 @@ body .dark-mode {
 }
 
 // ----- Sepia ----- //
-body .sepia-mode {
+.sepia-mode body {
 	color: $font-sepia-color;
 	background-color: $bg-sepia-color;
 
@@ -76,7 +94,12 @@ body .sepia-mode {
 	}
 
 	.text__link {
-		@include text-link($color-sepia-primary);
+		color: $color-sepia-primary;
+		
+		&:hover:after,
+		&:focus:after {
+			background: $color-sepia-primary;
+		}
 	}
 
 	.shaped__container {
@@ -85,6 +108,10 @@ body .sepia-mode {
 		&:hover {
 			border-color: $color-sepia-primary;
 		}
+	}
+
+	.svg__icon:hover {
+		fill: $color-dark-primary;
 	}
 
 	.svg__wrap:hover .svg__icon,

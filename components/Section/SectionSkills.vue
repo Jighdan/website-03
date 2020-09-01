@@ -1,6 +1,6 @@
 <template>
 	<section class="section__container">
-		<h2 class="section__title">Skills</h2>
+		<h2 class="section__container__title">Skills</h2>
 		<section class="section__skills__container">
 			<TemplateSkill title="Languages" :list="languages" />
 			<TemplateSkill title="Frameworks" :list="frameworks" />
