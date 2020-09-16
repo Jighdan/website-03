@@ -113,6 +113,9 @@ export default {
 		preference: "system",
 		fallback: "dark",
 		componentName: "SectionColorScheme",
+		cookie: {
+			key: "web-color-mode",
+		},
 	},
 
 	optimizedImages: {

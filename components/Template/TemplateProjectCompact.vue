@@ -34,14 +34,7 @@
 </template>
 
 <script>
-import BaseIcon from "~/components/Base/BaseIcon";
-import BaseTextLink from "~/components/Base/BaseTextLink";
-
 export default {
-	components: {
-		BaseIcon,
-		BaseTextLink,
-	},
 	props: {
 		project: {
 			type: Object,
@@ -72,9 +65,9 @@ export default {
 		@include flex-layout(flex-end, center);
 
 		.template__project__compact__icon {
-			@include margin-set($x: 0.1rem);
+			@include margin-set($x: 0.2rem);
 			height: auto;
-			width: 25px;
+			width: 27.5px;
 		}
 	}
 

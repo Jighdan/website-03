@@ -8,18 +8,6 @@
 	</footer>
 </template>
 
-<script>
-import SectionColorScheme from "~/components/Section/SectionColorScheme.vue";
-import BaseTextLink from "~/components/Base/BaseTextLink";
-
-export default {
-	components: {
-		SectionColorScheme,
-		BaseTextLink,
-	},
-};
-</script>
-
 <style lang="scss">
 .footer {
 	@include flex-layout(space-between, center);

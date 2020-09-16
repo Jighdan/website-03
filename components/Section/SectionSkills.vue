@@ -11,12 +11,8 @@
 
 <script>
 import { mapGetters } from "vuex";
-import TemplateSkill from "~/components/Template/TemplateSkill";
 
 export default {
-	components: {
-		TemplateSkill,
-	},
 	computed: mapGetters({
 		languages: "skills/getLanguages",
 		frameworks: "skills/getFrameworks",

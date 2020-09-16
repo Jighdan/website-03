@@ -1,6 +1,6 @@
 <template>
 	<section class="section__intro">
-		<TemplateImage />
+		<TemplateImage :image="introImage" />
 		<section class="section__intro__container">
 			<h1 class="section__intro__title text__highlight">Hey ~ I'm Reinny 🤙</h1>
 			<section class="section__intro__body">
@@ -36,14 +36,12 @@
 </template>
 
 <script>
-import TemplateImage from "~/components/Template/TemplateImage";
-import BaseTextLink from "~/components/Base/BaseTextLink";
+import { mapGetters } from "vuex";
 
 export default {
-	components: {
-		TemplateImage,
-		BaseTextLink,
-	},
+	computed: mapGetters({
+		introImage: "assets/getIntroImage",
+	}),
 };
 </script>
 

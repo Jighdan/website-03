@@ -36,14 +36,7 @@
 </template>
 
 <script>
-import BaseIcon from "~/components/Base/BaseIcon";
-import BaseTextLink from "~/components/Base/BaseTextLink";
-
 export default {
-	components: {
-		BaseTextLink,
-		BaseIcon,
-	},
 	props: {
 		project: {
 			type: Object,

@@ -16,12 +16,8 @@
 
 <script>
 import { mapGetters } from "vuex";
-import TemplateProjectCompact from "~/components/Template/TemplateProjectCompact";
 
 export default {
-	components: {
-		TemplateProjectCompact,
-	},
 	computed: mapGetters({
 		projects: "projects/getMainProjects",
 	}),

@@ -15,12 +15,8 @@
 
 <script>
 import { mapGetters } from "vuex";
-import TemplateProjectExpanded from "~/components/Template/TemplateProjectExpanded";
 
 export default {
-	components: {
-		TemplateProjectExpanded,
-	},
 	computed: {
 		...mapGetters({
 			allProjects: "projects/getAllProjects",

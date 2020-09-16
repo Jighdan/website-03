@@ -14,6 +14,19 @@ export default () => ({
 			main: true,
 		},
 		{
+			title: "(36 + 3) Questions",
+			description:
+				"A static website that displays a series of questions that were portrayed in a social study.",
+			descriptionLong:
+				"A website that displays a series of questions that were portrayed in a social study. The biggest challenge for making this website was to make the questions swipe-able, which I was able to fulfill using the Swipe library.",
+			tags: ["javascript", "html", "css"],
+			links: {
+				demo: "https://jighdan.github.io/36-Questions",
+				code: "https://github.com/Jighdan/36-Questions",
+			},
+			main: false,
+		},
+		{
 			title: "Notew",
 			description:
 				"A command line note-taking application, with CRUD functions; based on OOP principles.",
@@ -40,23 +53,10 @@ export default () => ({
 			main: true,
 		},
 		{
-			title: "(36 + 3) Questions",
-			description:
-				"A static website that displays a series of questions that were portrayed in a social study.",
-			descriptionLong:
-				"A website that displays a series of questions that were portrayed in a social study. The biggest challenge for making this website was to make the questions swipe-able, which I was able to fulfill using the Swipe library.",
-			tags: ["javascript", "html", "css"],
-			links: {
-				demo: "https://jighdan.github.io/36-Questions",
-				code: "https://github.com/Jighdan/36-Questions",
-			},
-			main: false,
-		},
-		{
 			title: "Flasky Fox",
-			description: "Static website made with Nuxt",
+			description: "Static website made with Nuxt for practicing concepts.",
 			descriptionLong:
-				"A static website about foxes first made with Flask and generated using Frozen-Flask; later migrated to Nuxt. Such a difference from working with these two frameworks for a simple website.",
+				"A static website for practicing concepts; first made with Flask and generated using Frozen-Flask; later migrated to Nuxt, making use of @nuxt/content module as a headless CMS.",
 			tags: ["nuxt", "vue", "flask"],
 			links: {
 				demo: "https://jighdan.github.io/flasky_fox/",

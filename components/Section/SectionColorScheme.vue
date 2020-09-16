@@ -20,10 +20,10 @@ export default {
 	components: {
 		BaseIcon,
 	},
-	computed: {
-		colors() {
-			return this.$store.state.colorModes;
-		},
+	data() {
+		return {
+			colors: ["light", "dark", "sepia"],
+		};
 	},
 };
 </script>

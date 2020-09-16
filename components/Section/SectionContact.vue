@@ -24,12 +24,8 @@
 
 <script>
 import { mapGetters } from "vuex";
-import BaseIcon from "~/components/Base/BaseIcon";
 
 export default {
-	components: {
-		BaseIcon,
-	},
 	computed: mapGetters({
 		profiles: "contacts/getProfiles",
 	}),

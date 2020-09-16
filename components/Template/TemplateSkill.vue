@@ -13,12 +13,7 @@
 </template>
 
 <script>
-import BaseIcon from "~/components/Base/BaseIcon";
-
 export default {
-	components: {
-		BaseIcon,
-	},
 	props: {
 		title: {
 			type: String,
