@@ -1,34 +1,34 @@
 <template>
 	<section class="section__intro">
-		<TemplateImage :image="introImage" />
+		<section v-lazy-container="{ selector: 'img' }">
+			<img
+				:data-src="require('~/assets/images/avatar.jpeg')"
+				:data-loading="require('~/assets/images/avatar.jpeg?lqip')"
+				alt="Reinny at the beach"
+				class="section__intro__image"
+			/>
+		</section>
+
 		<section class="section__intro__container">
 			<h1 class="section__intro__title text__highlight">Hey ~ I'm Reinny 🤙</h1>
 			<section class="section__intro__body">
 				<p class="section__intro__text">
-					After writing
-					<BaseTextLink
-						link="https://github.com/Jighdan/MUBI-wbs"
-						content="my first Python script"
-						:target="true"
-					/>, programming became my main curiosity ✨. Since then, I have been
-					learning about the different programming languages, paradigms, and
-					development processes that it involves.
+					I enjoy learning, reading, solving problems, films, connecting with
+					members from the diverse technology communities, contributing to
+					open-source software, and trying out new tools (in particular
+					state-of-art tech!).
 				</p>
 				<p class="section__intro__text">
-					What I have found the most fascinating about programming, in general,
-					is how it enables you as a programmer to communicate even with someone
-					that doesn't speak the same language; the potential of contribution.
-					💪
+					More of my skills and work down below.
 				</p>
 				<p class="section__intro__text">
-					I enjoy experimenting with new technologies and programming languages,
-					interacting with other members from diverse communities, solving
-					programming challenges, and contributing to open source projects
+					If you like charts and visuals, check my profile at
 					<BaseTextLink
-						link="https://github.com/python/python-docs-es/issues"
-						content="(Help translating the Python docs)"
+						link="https://sourcerer.io/jighdan"
+						content="Sourcerer.io"
 						:target="true"
-					/>. More about my skills and projects below! 🔥
+					/>
+					.
 				</p>
 			</section>
 		</section>
@@ -45,9 +45,21 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .section__intro {
 	@include flex-layout(space-between, center, true);
+
+	.section__intro__image {
+		@include border-radius-cut(0, 3.5rem);
+		@include margin-set($right: 1rem);
+		height: auto;
+		max-width: 100%;
+		width: 25rem;
+
+		&[lazy="loading"] {
+			filter: blur(10px);
+		}
+	}
 }
 
 .section__intro__container {

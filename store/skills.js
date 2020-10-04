@@ -1,5 +1,13 @@
 export const state = () => ({
-	languages: ["python", "javascript", "html", "css", "sass", "sql", "latex"],
+	languages: [
+		"python",
+		"javascript",
+		"typescript",
+		"html",
+		"css",
+		"sass",
+		"sql",
+	],
 	frameworks: ["vue", "nuxt", "quasar", "flask", "tailwind", "bootstrap"],
 	tools: ["git", "node", "npm", "travis", "heroku", "netlify", "figma"],
 });

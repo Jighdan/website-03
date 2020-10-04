@@ -14,6 +14,18 @@ export default () => ({
 			main: true,
 		},
 		{
+			title: "Pokedex",
+			description:
+				"A Web Application made with Svelte, making use of the PokeAPI, displays the first 100 Pokemons. This project purpose was for testing Svelte and was a fairly simple project.",
+			tags: ["svelte", "node"],
+			links: {
+				demo: false,
+				code:
+					"https://github.com/Jighdan/exerceo/tree/master/frameworks/Svelte/Pokedex",
+			},
+			main: false,
+		},
+		{
 			title: "(36 + 3) Questions",
 			description:
 				"A static website that displays a series of questions that were portrayed in a social study.",
@@ -23,6 +35,18 @@ export default () => ({
 			links: {
 				demo: "https://jighdan.github.io/36-Questions",
 				code: "https://github.com/Jighdan/36-Questions",
+			},
+			main: false,
+		},
+		{
+			title: "Tic-Tac-Toe",
+			description:
+				"Soft introduction to React following their own documentation tutorial for a Tic-Tac-Toe game.",
+			tags: ["react", "typescript"],
+			links: {
+				demo: false,
+				code:
+					"https://github.com/Jighdan/exerceo/tree/master/frameworks/react/tic-tac-toe",
 			},
 			main: false,
 		},

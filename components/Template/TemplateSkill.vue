@@ -6,6 +6,7 @@
 				v-for="item in list"
 				:key="item"
 				:name="item"
+				:tooltip="true"
 				class="template__skill__icon"
 			/>
 		</section>

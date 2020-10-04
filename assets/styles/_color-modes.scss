@@ -37,6 +37,11 @@ body {
 	.svg__wrap:focus .svg__icon {
 		fill: $color-light-primary;
 	}
+
+	.tooltip-inner {
+		background-color: $font-light-color;
+		color: $bg-light-color;
+	}
 }
 
 // ----- Dark ----- //
@@ -78,6 +83,11 @@ body {
 	.svg__wrap:focus .svg__icon {
 		fill: $color-dark-primary;
 	}
+
+	.tooltip-inner {
+		background-color: $font-dark-color;
+		color: $bg-dark-color;
+	}
 }
 
 // ----- Sepia ----- //
@@ -118,5 +128,10 @@ body {
 	.svg__wrap:active .svg__icon,
 	.svg__wrap:focus .svg__icon {
 		fill: $color-sepia-primary;
+	}
+
+	.tooltip-inner {
+		background-color: $font-sepia-color;
+		color: $bg-sepia-color;
 	}
 }

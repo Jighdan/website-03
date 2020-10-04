@@ -1,18 +1,5 @@
 export default {
-	/*
-	 ** Nuxt rendering mode
-	 ** See https://nuxtjs.org/api/configuration-mode
-	 */
-	mode: "universal",
-	/*
-	 ** Nuxt target
-	 ** See https://nuxtjs.org/api/configuration-target
-	 */
 	target: "static",
-	/*
-	 ** Headers of the page
-	 ** See https://nuxtjs.org/api/configuration-head
-	 */
 	head: {
 		title: "Jighdan's Portfolio",
 		htmlAttrs: {
@@ -67,33 +54,20 @@ export default {
 		],
 		link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
 	},
-	/*
-	 ** Global CSS
-	 */
+
 	css: ["~/assets/styles/_base.scss", "~/assets/styles/_color-modes.scss"],
-	/*
-	 ** Plugins to load before mounting the App
-	 ** https://nuxtjs.org/guide/plugins
-	 */
-	plugins: [],
-	/*
-	 ** Auto import components
-	 ** See https://nuxtjs.org/api/configuration-components
-	 */
+
+	plugins: ["~/plugins/vue-tooltip.js", "~/plugins/vue-lazyload.js"],
+
 	components: true,
-	/*
-	 ** Nuxt.js dev-modules
-	 */
+
 	buildModules: [
-		// Doc: https://github.com/nuxt-community/eslint-module
 		"@nuxtjs/color-mode",
 		"@nuxtjs/style-resources",
 		"@nuxtjs/eslint-module",
 		"@aceforth/nuxt-optimized-images",
 	],
-	/*
-	 ** Nuxt.js modules
-	 */
+
 	modules: ["nuxt-svg-loader", "nuxt-webfontloader"],
 
 	// Fonts
@@ -122,9 +96,5 @@ export default {
 		optimizeImages: true,
 	},
 
-	/*
-	 ** Build configuration
-	 ** See https://nuxtjs.org/api/configuration-build/
-	 */
 	build: {},
 };

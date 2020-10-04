@@ -1,5 +1,11 @@
 <template>
-	<component :is="`icon-${name}`" class="svg__icon" />
+	<component
+		:is="`icon-${name}`"
+		v-if="tooltip"
+		v-tooltip.top-center="{ content: styledName }"
+		class="svg__icon"
+	/>
+	<component :is="`icon-${name}`" v-else class="svg__icon" />
 </template>
 
 <script>
@@ -10,13 +16,15 @@ import IconHtml from "~/assets/svg/html5.svg";
 import IconCss from "~/assets/svg/css3.svg";
 import IconSass from "~/assets/svg/sass.svg";
 import IconSql from "~/assets/svg/mysql.svg";
-import IconLatex from "~/assets/svg/latex.svg";
+import IconTypescript from "~/assets/svg/typescript.svg";
 
 // Frameworks
 import IconNuxt from "~/assets/svg/nuxt-dot-js.svg";
 import IconFlask from "~/assets/svg/flask.svg";
 import IconVue from "~/assets/svg/vue-dot-js.svg";
 import IconQuasar from "~/assets/svg/quasar.svg";
+import IconReact from "~/assets/svg/react.svg";
+import IconSvelte from "~/assets/svg/svelte.svg";
 import IconTailwind from "~/assets/svg/tailwindcss.svg";
 import IconBootstrap from "~/assets/svg/bootstrap.svg";
 
@@ -43,9 +51,6 @@ import IconWhatsapp from "~/assets/svg/whatsapp.svg";
 import IconTwitter from "~/assets/svg/twitter.svg";
 import IconEmail from "~/assets/svg/email.svg";
 
-// UI
-import IconBack from "~/assets/svg/go-back.svg";
-
 export default {
 	components: {
 		IconPython,
@@ -56,14 +61,14 @@ export default {
 		IconHtml,
 		IconCss,
 		IconSql,
-		IconLatex,
+		IconTypescript,
 		IconVue,
 		IconQuasar,
+		IconReact,
 		IconTailwind,
 		IconBootstrap,
 		IconGit,
 		IconNode,
-		IconBack,
 		IconNpm,
 		IconTravis,
 		IconEslint,
@@ -79,12 +84,35 @@ export default {
 		IconLight,
 		IconDark,
 		IconSepia,
+		IconSvelte,
 	},
 	props: {
 		name: {
 			type: String,
 			required: true,
 		},
+		tooltip: {
+			type: Boolean,
+			default: false,
+		},
+	},
+	computed: {
+		styledName() {
+			return this.name.replace(/^\w/, (char) => char.toUpperCase());
+		},
 	},
 };
 </script>
+
+<style lang="scss">
+.tooltip {
+	margin-bottom: 0.75rem;
+	display: block;
+	z-index: 1000;
+
+	.tooltip-inner {
+		border-radius: 8px 16px;
+		padding: 3px 7.5px;
+	}
+}
+</style>

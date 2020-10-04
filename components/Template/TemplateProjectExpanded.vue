@@ -9,12 +9,13 @@
 					v-for="tag in project.tags"
 					:key="tag"
 					:name="tag"
+					:tooltip="true"
 					class="project__expanded__icon svg__icon"
 				/>
 			</section>
 		</section>
 		<p class="project__expanded__text">
-			{{ project.descriptionLong }}
+			{{ project.descriptionLong || project.description }}
 		</p>
 		<section class="project__expanded__links">
 			<BaseTextLink
@@ -48,6 +49,7 @@ export default {
 
 <style lang="scss">
 .project__expanded__container {
+	@include margin-set($bottom: 1.5rem);
 	@include padding-set($y: 1rem, $x: 1.5rem);
 	@include inline-grid-layout(0.75rem, auto 1fr auto);
 	@include border-radius-cut(0, 32px);
