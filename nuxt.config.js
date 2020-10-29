@@ -60,6 +60,12 @@ export default {
 		optimizeImages: true,
 	},
 
+	// Sitemap
+	sitemap: {
+		hostname: "https://github.com",
+		gzip: true,
+	},
+
 	// Social Meta Tags
 	nuxtSocialMeta: {
 		url: "https://jighdan.github.io/",
