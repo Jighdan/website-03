@@ -6,9 +6,10 @@
 			</h3>
 			<section class="template__project__compact__tags">
 				<BaseIcon
-					v-for="tag in project.tags"
-					:key="tag"
-					:name="tag"
+					v-for="tag in skills"
+					:key="tag.name"
+					:name="tag.name"
+					:text="tag.styled"
 					class="template__project__compact__icon"
 				/>
 			</section>
@@ -34,11 +35,21 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
 	props: {
 		project: {
 			type: Object,
 			required: true,
+		},
+	},
+	computed: {
+		...mapGetters({
+			getSkillByName: "skills/getSkillByName",
+		}),
+		skills() {
+			return this.project.tags.map((tag) => this.getSkillByName(tag));
 		},
 	},
 };

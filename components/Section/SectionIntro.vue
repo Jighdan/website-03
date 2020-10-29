@@ -35,16 +35,6 @@
 	</section>
 </template>
 
-<script>
-import { mapGetters } from "vuex";
-
-export default {
-	computed: mapGetters({
-		introImage: "assets/getIntroImage",
-	}),
-};
-</script>
-
 <style lang="scss" scoped>
 .section__intro {
 	@include flex-layout(space-between, center, true);

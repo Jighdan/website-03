@@ -1,11 +1,9 @@
 <template>
 	<component
 		:is="`icon-${name}`"
-		v-if="tooltip"
-		v-tooltip.top-center="{ content: styledName }"
+		v-tooltip.top-center="{ content: text }"
 		class="svg__icon"
 	/>
-	<component :is="`icon-${name}`" v-else class="svg__icon" />
 </template>
 
 <script>
@@ -27,6 +25,7 @@ import IconReact from "~/assets/svg/react.svg";
 import IconSvelte from "~/assets/svg/svelte.svg";
 import IconTailwind from "~/assets/svg/tailwindcss.svg";
 import IconBootstrap from "~/assets/svg/bootstrap.svg";
+import IconStyledComponents from "~/assets/svg/styled-components.svg";
 
 // Tools
 import IconBash from "~/assets/svg/gnubash.svg";
@@ -85,20 +84,16 @@ export default {
 		IconDark,
 		IconSepia,
 		IconSvelte,
+		IconStyledComponents,
 	},
 	props: {
 		name: {
 			type: String,
 			required: true,
 		},
-		tooltip: {
-			type: Boolean,
-			default: false,
-		},
-	},
-	computed: {
-		styledName() {
-			return this.name.replace(/^\w/, (char) => char.toUpperCase());
+		text: {
+			type: String,
+			required: true,
 		},
 	},
 };

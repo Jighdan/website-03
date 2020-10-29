@@ -3,10 +3,10 @@
 		<h3 class="template__skill__title text__highlight">{{ title }}</h3>
 		<section class="template__skills__list">
 			<BaseIcon
-				v-for="item in list"
-				:key="item"
-				:name="item"
-				:tooltip="true"
+				v-for="icon in list"
+				:key="icon.name"
+				:name="icon.name"
+				:text="icon.styled"
 				class="template__skill__icon"
 			/>
 		</section>

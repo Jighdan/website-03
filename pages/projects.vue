@@ -1,8 +1,6 @@
 <template>
 	<section class="section__projects__all">
-		<nuxt-link to="/" class="section__projects__all__link text__link"
-			>Go Back</nuxt-link
-		>
+		<nuxt-link to="/" class="text__link">Go Back</nuxt-link>
 		<article class="section__projects__all__wrap">
 			<TemplateProjectExpanded
 				v-for="(project, index) in allProjects"

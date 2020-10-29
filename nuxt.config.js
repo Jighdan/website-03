@@ -8,49 +8,6 @@ export default {
 		meta: [
 			{ charset: "utf-8" },
 			{ name: "viewport", content: "width=device-width, initial-scale=1" },
-			{
-				hid: "description",
-				name: "description",
-				content: "I am Jighdan, an always-learning web developer.",
-			},
-			{
-				name: "title",
-				content: "Jighdan's Portfolio",
-			},
-			{
-				name: "description",
-				content: "I am Jighdan, an always-learning web developer.",
-			},
-			// <!-- Open Graph / Facebook -->
-			{
-				property: "og:title",
-				content: "Jighdan's Portfolio",
-			},
-			{
-				property: "og:description",
-				content: "I am Jighdan, an always-learning web developer.",
-			},
-			{
-				property: "og:image",
-				content: "assets/images/avatar.jpeg",
-			},
-			// <!-- Twitter -->
-			{
-				property: "twitter:card",
-				content: "summary_large_image",
-			},
-			{
-				property: "twitter:title",
-				content: "Jighdan's Portfolio",
-			},
-			{
-				property: "twitter:description",
-				content: "I am Jighdan, an always-learning web developer.",
-			},
-			{
-				property: "twitter:image",
-				content: "assets/images/avatar.jpeg",
-			},
 		],
 		link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
 	},
@@ -68,7 +25,13 @@ export default {
 		"@aceforth/nuxt-optimized-images",
 	],
 
-	modules: ["nuxt-svg-loader", "nuxt-webfontloader"],
+	modules: [
+		"nuxt-svg-loader",
+		"nuxt-webfontloader",
+		"@nuxtjs/sitemap",
+		"@nuxtjs/robots",
+		"nuxt-social-meta",
+	],
 
 	// Fonts
 	webfontloader: {
@@ -92,8 +55,22 @@ export default {
 		},
 	},
 
+	// Optimized Images
 	optimizedImages: {
 		optimizeImages: true,
+	},
+
+	// Social Meta Tags
+	nuxtSocialMeta: {
+		url: "https://jighdan.github.io/",
+		title: "Jighdan's Portfolio",
+		site_name: "https://jighdan.github.io/",
+		description: "I am Jighdan, an always-learning programmer.",
+		img: "favicon.ico",
+		locale: "en_US",
+		twitter: "@jighdan",
+		twitter_card: "I am Jighdan, an always-learning programmer.",
+		themeColor: "#fbf1c7",
 	},
 
 	build: {},

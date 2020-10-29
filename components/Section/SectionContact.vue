@@ -15,6 +15,7 @@
 			>
 				<BaseIcon
 					:name="profile.name.toLowerCase()"
+					:text="profile.name"
 					class="section__contact__svg svg__icon"
 				/>
 			</a>

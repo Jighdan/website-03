@@ -1,11 +1,24 @@
 export default () => ({
 	projects: [
 		{
+			title: "HK",
+			description:
+				"A command-line RPG game; made for practicing OOP concepts, and data structures.",
+			descriptionLong:
+				"A command-line role-playing made with Python. In this project a got to try new data structures, such as 2D Arrays, Circular Linked Lists; with an Object-Oriented approach.",
+			tags: ["python"],
+			links: {
+				demo: false,
+				code: "https://github.com/Jighdan/hk",
+			},
+			main: true,
+		},
+		{
 			title: "Nuxt Portfolio",
 			description:
 				"My developer portfolio, recreated with Nuxt. Felt in love with it right away; such an amazing framework and community.",
 			descriptionLong:
-				"A portfolio to display my projects and a little about me. While not making use of any CSS framework, and having a mobile-first design pattern, I was able to make a really simple yet practical looking website; also, making use of nuxt-community very own tools, such as, nuxt-color-mode and styled-resources, managing components and making sure they are just fulfilling one responsibility, made the code feel clean, and kept that scalability Vue preaches on.",
+				"A portfolio to display my projects and a little about me. While not making use of any CSS framework, and having a mobile-first design pattern, I was able to make a really simple yet practical looking website.",
 			tags: ["nuxt", "vue", "javascript"],
 			links: {
 				demo: "https://jighdan.github.io",
@@ -56,7 +69,7 @@ export default () => ({
 				"A command line note-taking application, with CRUD functions; based on OOP principles.",
 			descriptionLong:
 				"When I first switched from Windows to Linux, using CLI programs became a habit; so I decided to make an app that would allow me to take notes without leaving the command line. The biggest challenge for working on this project was refactoring after having a minimum viable app; making use of OOP concepts.",
-			tags: ["python", "bash", "sql"],
+			tags: ["python", "sql"],
 			links: {
 				demo: false,
 				code: "https://github.com/Jighdan/notew",
@@ -69,12 +82,12 @@ export default () => ({
 				"A Python command line application's file structure generator",
 			descriptionLong:
 				"After making notew, I found about packaging and it's benefits; figured out I will be making packages more frequently and to ease the process, made this package template initializer.",
-			tags: ["python", "bash"],
+			tags: ["python"],
 			links: {
 				demo: false,
 				code: "https://github.com/Jighdan/create-python-package",
 			},
-			main: true,
+			main: false,
 		},
 		{
 			title: "Flasky Fox",

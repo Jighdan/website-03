@@ -6,10 +6,10 @@
 			</h3>
 			<section class="project__expanded__tags">
 				<BaseIcon
-					v-for="tag in project.tags"
-					:key="tag"
-					:name="tag"
-					:tooltip="true"
+					v-for="tag in skills"
+					:key="tag.name"
+					:name="tag.name"
+					:text="tag.styled"
 					class="project__expanded__icon svg__icon"
 				/>
 			</section>
@@ -37,11 +37,22 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
 	props: {
 		project: {
 			type: Object,
 			required: true,
+		},
+	},
+	computed: {
+		...mapGetters({
+			getSkillByName: "skills/getSkillByName",
+		}),
+		skills() {
+			const data = this.project.tags.map((tag) => this.getSkillByName(tag));
+			return data;
 		},
 	},
 };
@@ -87,10 +98,5 @@ export default {
 	@include flex-layout(space-evenly, center);
 	@include margin-set($x: auto);
 	width: 75%;
-
-	.project__expanded__link {
-		font-size: 1.1em;
-		font-weight: 600;
-	}
 }
 </style>

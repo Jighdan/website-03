@@ -2,27 +2,39 @@
 	<section class="section__color__scheme">
 		<a
 			v-for="color in colors"
-			:key="color"
+			:key="color.name"
 			class="section__color__scheme__mode svg__wrap"
 			target="_self"
 			tabindex="0"
-			@click="$colorMode.preference = color"
+			@click="$colorMode.preference = color.name"
 		>
-			<BaseIcon :name="color" class="section__color__scheme__icon svg__icon" />
+			<BaseIcon
+				:name="color.name"
+				:text="color.styled"
+				class="section__color__scheme__icon svg__icon"
+			/>
 		</a>
 	</section>
 </template>
 
 <script>
-import BaseIcon from "~/components/Base/BaseIcon";
-
 export default {
-	components: {
-		BaseIcon,
-	},
 	data() {
 		return {
-			colors: ["light", "dark", "sepia"],
+			colors: [
+				{
+					name: "light",
+					styled: "Light",
+				},
+				{
+					name: "dark",
+					styled: "Dark",
+				},
+				{
+					name: "sepia",
+					styled: "Sepia",
+				},
+			],
 		};
 	},
 };

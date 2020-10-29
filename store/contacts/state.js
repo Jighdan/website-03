@@ -26,7 +26,7 @@ const data = {
 	},
 };
 
-export const state = () => ({
+export default () => ({
 	profiles: [
 		data.linkedin,
 		data.github,
@@ -36,12 +36,3 @@ export const state = () => ({
 	],
 	headerProfiles: [data.linkedin, data.github, data.resume],
 });
-
-export const getters = {
-	getProfiles(state) {
-		return state.profiles;
-	},
-	getHeaderProfiles(state) {
-		return state.headerProfiles;
-	},
-};
