@@ -1,19 +1,6 @@
 export default () => ({
 	projects: [
 		{
-			title: "HK",
-			description:
-				"A command-line RPG game; made for practicing OOP concepts, and data structures.",
-			descriptionLong:
-				"A command-line role-playing made with Python. In this project a got to try new data structures, such as 2D Arrays, Circular Linked Lists; with an Object-Oriented approach.",
-			tags: ["python"],
-			links: {
-				demo: false,
-				code: "https://github.com/Jighdan/hk",
-			},
-			main: true,
-		},
-		{
 			title: "Nuxt Portfolio",
 			description:
 				"My developer portfolio, recreated with Nuxt. Felt in love with it right away; such an amazing framework and community.",
