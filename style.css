@@ -1,0 +1,38 @@
+:root {
+	--font: "Open Sans", sans-serif;
+	--color-bg: #1e1e1e;
+	--color-font: #dee0cf;
+	--color-accent: #bb86fb;
+}
+
+html {
+	font-family: var(--font);
+	color: var(--color-font);
+	background-color: var(--color-bg);
+}
+
+main {
+	padding-left: 5vw;
+	padding-right: 5vw;
+	text-align: center
+}
+
+h1 {
+	font-size: clamp(2rem, 10vw, 4rem);
+	margin-bottom: 0.25rem;
+}
+
+h2 {
+	font-weight: normal;
+	font-style: italic;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: clamp(0.75em, 3vw, 1.2rem);
+}
+
+a {
+	color: var(--color-accent);
+	text-decoration: underline;
+}
