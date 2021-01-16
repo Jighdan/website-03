@@ -14,7 +14,7 @@ html {
 main {
 	padding-left: 5vw;
 	padding-right: 5vw;
-	text-align: center
+	text-align: center;
 }
 
 h1 {
@@ -34,5 +34,4 @@ h3 {
 
 a {
 	color: var(--color-accent);
-	text-decoration: underline;
 }
