@@ -1,5 +1,5 @@
 <template>
-	<a :href="link" :target="opensOnANewTab ? '_blank' : '_self'">
+	<a :href="to" :target="newTab ? '_blank' : '_self'">
 		<slot></slot>
 	</a>
 </template>
@@ -7,11 +7,11 @@
 <script lang="ts">
 export default {
 	props: {
-		link: {
+		to: {
 			type: String,
 			required: true,
 		},
-		opensOnANewTab: {
+		newTab: {
 			type: Boolean,
 			default: false,
 		},
@@ -19,11 +19,14 @@ export default {
 };
 </script>
 
-<style lang="postcss" scoped>
-a {
-	@apply border-gray-200 border-b-2;
-	&:hover {
-		@apply cursor-pointer border-gray-700;
-	}
+<style lang="postcss">
+a,
+.nuxt-link {
+	@apply font-normal border-gray-200 border-b-2;
+}
+
+a:hover,
+.nuxt-link-active {
+	@apply cursor-pointer border-gray-700;
 }
 </style>
