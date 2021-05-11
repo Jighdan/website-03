@@ -7,6 +7,8 @@
 			>
 		</main>
 
-		<Contacts />
+		<footer>
+			<Contacts />
+		</footer>
 	</div>
 </template>
