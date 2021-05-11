@@ -7,6 +7,6 @@
 			>
 		</main>
 
-		<Navigation />
+		<Contacts />
 	</div>
 </template>

@@ -14,7 +14,7 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	box-sizing: border-box;
-	@apply text-gray-900 bg-gray-50;
+	@apply text-gray-900 bg-gray-50 h-screen w-screen;
 }
 
 *,
