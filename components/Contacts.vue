@@ -4,7 +4,9 @@
 			>Twitter</TextLink
 		>
 		<TextLink to="https://github.com/Jighdan" :new-tab="true">GitHub</TextLink>
-		<TextLink to="mailto:reynsth@gmail.com">E-Mail</TextLink>
-		<TextLink to="https://www.linkedin.com/in/jighdan/">LinkedIn</TextLink>
+		<TextLink to="mailto:reynsth@gmail.com" :new-tab="true">E-Mail</TextLink>
+		<TextLink to="https://www.linkedin.com/in/jighdan/" :new-tab="true"
+			>LinkedIn</TextLink
+		>
 	</div>
 </template>
