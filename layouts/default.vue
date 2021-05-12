@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="layout-container">
 		<Nuxt />
 	</div>
 </template>
@@ -14,7 +14,16 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	box-sizing: border-box;
-	@apply text-gray-900 bg-gray-50 h-screen w-screen;
+	@apply text-gray-900 bg-gray-50;
+}
+
+html,
+body {
+	@apply h-full w-full;
+}
+
+body {
+	@apply grid place-items-center;
 }
 
 *,
@@ -22,5 +31,9 @@ html {
 *::after {
 	box-sizing: border-box;
 	margin: 0;
+}
+
+.layout-container {
+	@apply min-h-full min-w-full;
 }
 </style>

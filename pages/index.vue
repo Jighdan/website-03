@@ -12,3 +12,13 @@
 		</footer>
 	</div>
 </template>
+
+<style lang="postcss" scoped>
+.page-wrap {
+	@apply flex flex-col justify-center items-center gap-1;
+
+	main {
+		text-align: center;
+	}
+}
+</style>

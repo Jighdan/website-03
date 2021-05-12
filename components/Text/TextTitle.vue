@@ -6,6 +6,6 @@
 
 <style lang="postcss" scoped>
 h1 {
-	@apply text-4xl font-medium;
+	@apply text-5xl font-medium;
 }
 </style>

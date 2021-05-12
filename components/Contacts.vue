@@ -10,3 +10,9 @@
 		>
 	</div>
 </template>
+
+<style lang="postcss" scoped>
+div {
+	@apply flex justify-between items-center gap-x-2;
+}
+</style>
