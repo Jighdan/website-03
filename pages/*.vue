@@ -1,6 +1,6 @@
 <script lang="ts">
 export default {
-	asyncData({ redirect }) {
+	fetch({ redirect }) {
 		return redirect("/");
 	},
 };
