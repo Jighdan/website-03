@@ -15,10 +15,10 @@
 
 <style lang="postcss" scoped>
 .page-wrap {
-	@apply flex flex-col justify-center items-center gap-1;
+	@apply flex flex-col justify-center items-center gap-y-4;
 
 	main {
-		text-align: center;
+		@apply flex flex-col gap-y-1 text-center;
 	}
 }
 </style>
