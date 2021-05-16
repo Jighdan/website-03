@@ -37,6 +37,13 @@ export default {
 		"@nuxtjs/google-fonts",
 	],
 
+	publicRuntimeConfig: {
+		airtable: {
+			key: process.env.AIRTABLE_KEY,
+			base: process.env.AIRTABLE_BASE,
+		},
+	},
+
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [],
 

@@ -6,6 +6,6 @@
 
 <style lang="postcss" scoped>
 p {
-	@apply text-lg font-light text-gray-400 italic;
+	@apply text-lg font-light text-gray-500 italic;
 }
 </style>
