@@ -8,7 +8,7 @@
 		</main>
 
 		<footer>
-			<Contacts />
+			<Navigation />
 		</footer>
 	</div>
 </template>
