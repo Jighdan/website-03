@@ -53,7 +53,6 @@ body {
 	@apply mb-5;
 }
 
-// Page transitions
 .page-enter-active,
 .page-leave-active {
 	transition: opacity 0.5s;
