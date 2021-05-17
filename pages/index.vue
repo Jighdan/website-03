@@ -3,7 +3,8 @@
 		<main>
 			<TextTitle>Reinny Almonte</TextTitle>
 			<TextParagraph
-				>Hey ~ I'm a Software Engineer from Dominican Republic 🇩🇴</TextParagraph
+				>Hey ~ I'm a Software Engineer from the Dominican Republic
+				🇩🇴</TextParagraph
 			>
 		</main>
 
