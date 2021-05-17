@@ -12,5 +12,5 @@ body {
 }
 
 #__nuxt {
-	@apply max-w-sm;
+	@apply max-w-sm py-14;
 }

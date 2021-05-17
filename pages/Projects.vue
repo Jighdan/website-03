@@ -25,6 +25,8 @@ import Airtable from "airtable";
 import { FieldSet } from "airtable/lib/field_set";
 
 export default {
+	layout: "secondary",
+
 	async asyncData({ $config }: Context) {
 		const { key, base } = $config.airtable;
 		const table = "Projects";

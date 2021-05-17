@@ -56,6 +56,12 @@
 	</div>
 </template>
 
+<script lang="ts">
+export default {
+	layout: "secondary",
+};
+</script>
+
 <style lang="postcss" scoped>
 .page-wrap {
 	main {
