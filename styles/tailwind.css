@@ -1,0 +1,16 @@
+html {
+	@apply text-gray-900 bg-gray-50;
+}
+
+html,
+body {
+	@apply h-full w-full;
+}
+
+body {
+	@apply grid place-items-center;
+}
+
+#root {
+	@apply px-4;
+}
