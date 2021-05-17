@@ -11,6 +11,6 @@ body {
 	@apply grid place-items-center;
 }
 
-#root {
-	@apply px-4;
+#__nuxt {
+	@apply max-w-sm py-14;
 }
