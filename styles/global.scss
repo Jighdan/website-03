@@ -1,0 +1,13 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html {
+	font-family: "Fira Sans Condensed", sans-serif;
+	font-size: 18px;
+	word-spacing: 1px;
+	box-sizing: border-box;
+}

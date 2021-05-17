@@ -17,7 +17,7 @@ export default {
 	},
 
 	// Global CSS: https://go.nuxtjs.dev/config-css
-	css: [],
+	css: ["@/styles/global.scss", "@/styles/transitions.scss"],
 
 	// Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
 	plugins: [],
@@ -49,6 +49,11 @@ export default {
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build
 	build: {},
+
+	// Tailwind CSS
+	tailwindcss: {
+		cssPath: "~/styles/tailwind.css",
+	},
 
 	// Google Fonts Configuration
 	googleFonts: {
