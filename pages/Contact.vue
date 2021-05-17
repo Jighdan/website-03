@@ -18,8 +18,8 @@
 					>You could find me on
 					<TextLink to="https://twitter.com/jighdan" new-tab>Twitter</TextLink>,
 					<TextLink to="https://www.linkedin.com/in/jighdan/" new-tab>
-						LinkedIn
-					</TextLink>
+						LinkedIn</TextLink
+					>
 					, or
 					<TextLink to="https://github.com/jighdan" new-tab>GitHub</TextLink>.
 				</TextParagraph>
