@@ -18,15 +18,3 @@ export default {
 	},
 };
 </script>
-
-<style lang="postcss">
-a,
-.nuxt-link {
-	@apply font-normal border-gray-200 border-b-2;
-}
-
-a:hover,
-.nuxt-link-active {
-	@apply cursor-pointer border-gray-700;
-}
-</style>
