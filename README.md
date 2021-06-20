@@ -1,4 +1,6 @@
-# jighdan-portfolio
+# Jighdan's Website
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/08993f33-8db9-467e-b41d-8d70b15e1f5c/deploy-status)](https://app.netlify.com/sites/reinny-almonte/deploys)
 
 ## Build Setup
 
