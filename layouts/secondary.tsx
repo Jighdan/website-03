@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 const LayoutSecondary: FC = ({ children }) => {
 	return (
 		<main className={ styles["layout"] }>
-			<header>
+			<header className={ styles["layout-back-link"] }>
 				<nav>
 					<Link href="/">Back</Link>
 				</nav>
