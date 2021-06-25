@@ -1,8 +1,9 @@
+import LayoutSecondary from "@/layouts/secondary";
 import * as Section from "./sections";
 
 const ContactPage = () => {
 	return (
-		<main>
+		<LayoutSecondary>
 			<header>
 				<h2>Contact</h2>
 			</header>
@@ -12,7 +13,7 @@ const ContactPage = () => {
 				<Section.SocialMediaSection />
 				<Section.AlgorithmsPlatformsSection />
 			</div>
-		</main>
+		</LayoutSecondary>
 	);
 };
 

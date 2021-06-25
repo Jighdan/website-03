@@ -1,11 +1,13 @@
+import LayoutDefault from "@/layouts/default";
+
 const LandingPage = () => {
 	return (
-		<div>
-			<main>
+		<LayoutDefault>
+			<div>
 				<h1>Reinny Almonte</h1>
 				<p>Hey ~ I<span>&#39;</span>m a Software Engineer from the Dominican Republic 🇩🇴</p>
-			</main>
-		</div>
+			</div>
+		</LayoutDefault>
 	)
 };
 
