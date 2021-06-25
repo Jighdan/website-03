@@ -1,4 +1,5 @@
 import TProject from "@/types/project";
+import styles from "./styles.module.scss";
 
 type ComponentProps = {
 	data: TProject
@@ -15,23 +16,18 @@ const ProjectListItem = ({ data }: ComponentProps) => {
 	} = data
 
 	return (
-		<article>
-			<header>
-				<h1>{ name }</h1>
+		<article className={ styles["project-list-item"] }>
+			<header className={ styles["project-list-item-header"] }>
+				<h3>{ name }</h3>
+				<h4>{ technologies.join(" + ") }</h4>
+				<time dateTime={ `${ new Date(dateFinished) }` }>{ dateFinished }</time>
 			</header>
 
-			<div>
-				<div>
-					<p>{ dateFinished }</p>
-					<p>{ technologies.join(" + ") }</p>
-				</div>
-
-				<div>
-					<p>{ description }</p>
-				</div>
+			<div className={ styles["project-list-item-body"] }>
+				<p>{ description }</p>
 			</div>
 
-			<footer>
+			<footer className={ styles["project-list-item-footer"] }>
 				{ repository as string && <a href={ repository } target="_blank" rel="noopener noreferrer">Repo</a> }
 				{ demo as string && <a href={ demo } target="_blank" rel="noopener noreferrer">Demo</a> }
 			</footer>

@@ -1,5 +1,6 @@
 import TProject from "@/types/project";
 import ProjectListItem from "./ProjectListItem";
+import styles from "./styles.module.scss";
 
 type ComponentProps = {
 	projects: Array<TProject>;
@@ -7,7 +8,7 @@ type ComponentProps = {
 
 const ProjectsList = ({ projects }: ComponentProps) => {
 	return (
-		<ul>
+		<ul className={ styles["projects-list"] }>
 			{
 				projects.map(project => (
 					<ProjectListItem

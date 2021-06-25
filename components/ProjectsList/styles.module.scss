@@ -1,0 +1,19 @@
+.projects-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	gap: 2rem;
+	list-style-position: outside;
+}
+
+.project-list-item {
+	display: flex;
+	flex-direction: column;
+	gap: 0.45rem;
+
+	&-footer {
+		display: flex;
+		justify-content: flex-start;
+		gap: 0.5rem;
+	}
+}

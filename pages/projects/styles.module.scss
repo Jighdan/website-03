@@ -1,0 +1,11 @@
+.projects-page {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+
+	&-intro {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+}
