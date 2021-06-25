@@ -30,7 +30,7 @@ const useAirtable = () => {
 			});
 	}, []);
 
-	return projects;
+	return { projects };
 };
 
 export default useAirtable;
