@@ -3,8 +3,8 @@ type TProject = {
 	name: string;
 	description: string;
 	technologies: Array<string>;
-	repository: string | undefined;
-	demo: string | undefined;
+	repository: string | null;
+	demo: string | null;
 	dateFinished: string;
 };
 

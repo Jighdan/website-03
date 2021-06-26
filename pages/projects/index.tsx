@@ -1,11 +1,14 @@
-import useAirtable from "@/hooks/useAirtable";
+import AirtableData from "library/airtableData";
+import TProject from "@/types/project";
 import LayoutSecondary from "@/layouts/secondary";
 import ProjectsList from "@/components/ProjectsList";
 import styles from "./styles.module.scss";
 
-const ProjectsPage = () => {
-	const { projects } = useAirtable();
+type ComponentProps = {
+	projects: Array<TProject>;
+};
 
+const ProjectsPage = ({ projects }: ComponentProps) => {
 	return (
 		<LayoutSecondary>
 			<div className={ styles["projects-page"] }>
@@ -24,6 +27,15 @@ const ProjectsPage = () => {
 			</div>
 		</LayoutSecondary>
 	)
+};
+
+export const getStaticProps = async () => {
+	const airtable = new AirtableData();
+	const projects = await airtable.fetchProjects();
+
+	return {
+		props: { projects }
+	};
 };
 
 export default ProjectsPage;
