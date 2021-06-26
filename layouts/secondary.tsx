@@ -1,10 +1,11 @@
 import { FC } from "react";
 import Link from "next/link";
+import LayoutDefault from "./default";
 import styles from "./styles.module.scss";
 
 const LayoutSecondary: FC = ({ children }) => {
 	return (
-		<main className={ styles["layout"] }>
+		<LayoutDefault>
 			<header className={ styles["layout-back-link"] }>
 				<nav>
 					<Link href="/">Back</Link>
@@ -14,7 +15,7 @@ const LayoutSecondary: FC = ({ children }) => {
 			<div>
 				{ children }
 			</div>
-		</main>
+		</LayoutDefault>
 	);
 };
 
