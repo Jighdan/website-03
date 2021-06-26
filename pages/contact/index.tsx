@@ -1,5 +1,5 @@
 import LayoutSecondary from "@/layouts/secondary";
-import * as Section from "./sections";
+import Sections from "./sections";
 import styles from "./styles.module.scss";
 
 const ContactPage = () => {
@@ -10,11 +10,7 @@ const ContactPage = () => {
 					<h2>Contact</h2>
 				</header>
 
-				<div className={ styles["contact-page-body"]}>
-					<Section.EmailSection />
-					<Section.SocialMediaSection />
-					<Section.AlgorithmsPlatformsSection />
-				</div>
+				<Sections />
 			</div>
 		</LayoutSecondary>
 	);

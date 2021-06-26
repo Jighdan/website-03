@@ -1,4 +1,6 @@
-export const EmailSection = () => {
+import styles from "./styles.module.scss";
+
+const EmailSection = () => {
 	const email = "reynsth@gmail.com";
 
 	return (
@@ -17,7 +19,7 @@ export const EmailSection = () => {
 	)
 };
 
-export const SocialMediaSection = () => {
+const SocialMediaSection = () => {
 	const links = {
 		twitter: "https://twitter.com/jighdan",
 		linkedIn: "https://www.linkedin.com/in/jighdan/",
@@ -49,7 +51,7 @@ export const SocialMediaSection = () => {
 	);
 };
 
-export const AlgorithmsPlatformsSection = () => {
+const AlgorithmsPlatformsSection = () => {
 	const links = {
 		codeWars: "https://www.codewars.com/users/Jighdan",
 		binarySearch: "https://binarysearch.com/@/jighdan",
@@ -94,3 +96,13 @@ export const AlgorithmsPlatformsSection = () => {
 		</section>
 	);
 };
+
+const Sections = () => (
+	<div className={ styles["contact-page-body"]}>
+		<EmailSection />
+		<SocialMediaSection />
+		<AlgorithmsPlatformsSection />
+	</div>
+);
+
+export default Sections;
