@@ -28,8 +28,8 @@ const ProjectListItem = ({ data }: ComponentProps) => {
 			</div>
 
 			<footer className={ styles["project-list-item-footer"] }>
-				{ repository as string && <a href={ repository } target="_blank" rel="noopener noreferrer">Repo</a> }
-				{ demo as string && <a href={ demo } target="_blank" rel="noopener noreferrer">Demo</a> }
+				{ repository as string && <a href={ repository as string } target="_blank" rel="noopener noreferrer">Repo</a> }
+				{ demo as string && <a href={ demo as string } target="_blank" rel="noopener noreferrer">Demo</a> }
 			</footer>
 		</article>
 	)
