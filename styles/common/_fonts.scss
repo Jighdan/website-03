@@ -2,7 +2,7 @@ h1,
 h2,
 h3 {
 	width: max-content;
-	padding: 0.125rem;
+	padding: 0.125rem 0.5rem;
 	font-weight: 500;
 }
 
@@ -19,15 +19,18 @@ h3 {
 }
 
 h1 {
-	font-size: 2.5em;
+	font-size: 3rem;
+	line-height: 1;
 }
 
 h2 {
-	font-size: 1.75em;
+	font-size: 1.5rem;
+	line-height: 2rem;
 }
 
 h3 {
-	font-size: 1.375em;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
 }
 
 h4 {
@@ -38,7 +41,7 @@ h4 {
 
 p,
 a {
-	font-size: 1.15em;
-	font-weight: 300;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
 	color: $color-font;
 }
