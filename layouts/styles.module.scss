@@ -1,5 +1,17 @@
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
 .layout {
 	max-width: 24rem;
+	animation-duration: 1s;
+	animation-name: fadeIn;
 
 	&-back-link {
 		margin-bottom: 1.5rem;
