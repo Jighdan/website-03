@@ -1,0 +1,19 @@
+.books-page {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+
+	header {
+		margin-bottom: 0.5rem;
+	}
+}
+
+.books-page-sections {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+
+	h3 {
+		margin-bottom: 0.25rem;
+	}
+}

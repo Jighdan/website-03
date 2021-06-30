@@ -1,0 +1,16 @@
+@import "@/styles/common/_variables";
+
+.book-list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+
+	h4 {
+		color: $color-font;
+		font-weight: 500;
+	}
+
+	h5 {
+		font-weight: normal;
+	}
+}
