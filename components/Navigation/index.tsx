@@ -8,6 +8,10 @@ const Navigation = () => {
 				Projects
 			</Link>
 
+			<Link href="/books">
+				Reading List
+			</Link>
+
 			<Link href="/contact">
 				Contact
 			</Link>
