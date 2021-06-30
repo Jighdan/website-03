@@ -1,0 +1,13 @@
+name: Scheduled Deploy
+on:
+  schedule:
+    - cron '0 0 * * *'
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Deploy Webhook on Vercel
+        run: crul -X POST "https://api.vercel.com/v1/integrations/deploy/${ TOKEN }"
+        env:
+          TOKEN: ${{ secrets.VERCEL_DEPLOY_HOOK }}
