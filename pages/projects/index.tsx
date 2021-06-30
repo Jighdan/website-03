@@ -31,7 +31,7 @@ const ProjectsPage = ({ projects }: ComponentProps) => {
 
 export const getStaticProps = async () => {
 	const airtable = new AirtableData();
-	const projects = await airtable.fetchProjects();
+	const { projects } = await airtable.fetchData();
 
 	return {
 		props: { projects }
