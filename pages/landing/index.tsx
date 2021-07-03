@@ -8,7 +8,7 @@ const LandingPage = () => {
 			<div className={ styles["landing-page"] }>
 				<div className={ styles["landing-page-intro"] }>
 					<h1>Reinny Almonte</h1>
-					<p>Hey ~ I<span>&#39;</span>m a Software Apprenticeship from the Dominican Republic 🇩🇴</p>
+					<p>Hey ~ I<span>&#39;</span>m a Software Apprentice from the Dominican Republic 🇩🇴</p>
 				</div>
 
 				<Navigation />
