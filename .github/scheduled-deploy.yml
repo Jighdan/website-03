@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger Deploy Webhook on Vercel
-        run: curl -X POST "https://api.vercel.com/v1/integrations/deploy/${ TOKEN }"
+        run: curl -X POST "https://api.vercel.com/v1/integrations/deploy/${TOKEN}"
         env:
           TOKEN: ${{ secrets.VERCEL_DEPLOY_HOOK }}
